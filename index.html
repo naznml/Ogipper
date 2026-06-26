@@ -58,3 +58,1898 @@ function norm(x){return x.split(",").filter(Boolean).sort((a,b)=>a-b).join(",")}
 function checkQuiz(id){const quiz=document.querySelector(`[data-quiz="${id}"]`);let ok=0;const qs=quiz.querySelectorAll(".q");qs.forEach(q=>{const right=norm(q.dataset.answer);const got=[];q.querySelectorAll("input").forEach(inp=>{const lab=inp.closest("label");lab.classList.remove("correct","wrong");if(inp.checked)got.push(inp.value);if(right.split(",").includes(inp.value))lab.classList.add("correct")});q.querySelectorAll("input:checked").forEach(inp=>{if(!right.split(",").includes(inp.value))inp.closest("label").classList.add("wrong")});q.querySelector(".ex").classList.add("show");if(norm(got.join(","))===right)ok++});const r=document.getElementById("result-"+id);r.classList.add("show");r.innerHTML=`<b>Нәтиже:</b> ${ok} / ${qs.length} дұрыс жауап. Әр сұрақтың дұрыс жауабы жасыл түспен көрсетілді.`}
 </script>
 <!-- Код 12-подразделден ары қарай жалғасады. Сайт толық біткенде ғана footer, </body> және </html> жабылу тегтері қосылады. -->
+       <article class="lesson" id="lesson-13">
+        <div class="lesson-header">
+          <div class="lesson-title">
+            <h2>13-подраздел. Психофизикалық мәселе</h2>
+            <p>
+              Бұл подразделде психикалық және физиологиялық процестердің арақатынасы,
+              психофизикалық өзара әрекет пен психофизикалық параллелизм принциптері,
+              эпифеноменализм қаупі, психиканы физиологияға толық редукциялау шектеуі
+              және психологияның өз заңдылықтары қарастырылады.
+            </p>
+          </div>
+          <div class="lesson-chip">13-подраздел</div>
+        </div>
+
+        <div class="content-grid">
+          <section class="theory-card">
+            <h3>Негізгі теория</h3>
+            <p>
+              Психофизикалық мәселе психикалық процестер мен физиологиялық процестердің
+              қалай байланысатынын түсіндіруге бағытталған. Бұл мәселе психологияның пәнін,
+              ғылыми түсіндіру тәсілдерін және психиканы физиологияға толық түсіруге
+              болмайтынын түсіну үшін маңызды.
+            </p>
+            <p>
+              Бірінші классикалық шешім — психофизикалық өзара әрекет принципі.
+              Бұл көзқарас физиологиялық процестер психикаға, ал психикалық процестер
+              физиологиялық процестерге тікелей әсер етеді деп түсіндіреді. Мұндай көзқарас
+              ерікті қозғалыс, психосоматикалық құбылыстар, ми зақымдануының психикаға
+              әсері сияқты фактілерге сүйенеді.
+            </p>
+            <p>
+              Бірақ өзара әрекет теориясы қиындыққа кездеседі. Егер психикалық процесс
+              материалдық емес себеп ретінде материалдық процесті тудырады деп түсіндірілсе,
+              онда энергияның сақталу заңы бұзылады. Сондықтан психика мен денені жай ғана
+              екі бөлек субстанция ретінде қарастыру жеткіліксіз.
+            </p>
+            <p>
+              Екінші классикалық шешім — психофизикалық параллелизм. Бұл көзқарас
+              психикалық және физиологиялық процестер бір-біріне сәйкес жүреді, бірақ
+              бір-біріне себептік әсер етпейді деп санайды. Мұндай шешім психика мен ми
+              процестерінің қатар жүруін түсіндіруге тырысқанымен, психиканы пассивті
+              эпифеноменге айналдыру қаупін тудырады.
+            </p>
+            <p>
+              Эпифеноменализмде психика физиологиялық процестің жанама көлеңкесі сияқты
+              түсіндіріледі. Мұндай жағдайда психиканың пайдалы қызметі түсініксіз болып қалады:
+              егер физиологиялық процесс бәрін өзі істесе, сана не үшін қажет деген сұрақ пайда болады.
+            </p>
+            <p>
+              Ұсынылатын шешім психикалық және физиологиялық процестерді екі бөлек процесс
+              емес, біртұтас өмірлік процестің әртүрлі жақтары ретінде қарастыруға жақын.
+              Физиология бір жақты, психология екінші жақты ашады. Олар бір-бірімен өзара
+              әрекеттеспейді, себебі олар бөлек заттар емес; олар бір процестің әртүрлі
+              талдау қырлары.
+            </p>
+            <p>
+              Осыдан физиологиялық редукционизмнің шектеуі көрінеді. Ми процестерін зерттеу
+              психиканы түсінуге қажет, бірақ психикалық құбылыстарды тек физиологиялық тілмен
+              толық түсіндіру жеткіліксіз. Психологияның өз талдау бірліктері, өз ұғымдары және
+              өз заңдылықтары сақталуы керек.
+            </p>
+
+            <ul class="clean-list">
+              <li>
+                <b>Психофизикалық мәселе</b> — психикалық және физиологиялық процестердің
+                арақатынасын түсіндіру мәселесі.
+              </li>
+              <li>
+                <b>Психофизикалық өзара әрекет</b> — психика мен физиология бір-біріне
+                тікелей себептік әсер етеді деген көзқарас.
+              </li>
+              <li>
+                <b>Психофизикалық параллелизм</b> — психикалық және физиологиялық процестер
+                қатар жүреді, бірақ бір-біріне себеп болмайды деген көзқарас.
+              </li>
+              <li>
+                <b>Физиологиялық редукционизм</b> — психикалық құбылыстарды толықтай ми
+                физиологиясымен түсіндіруге болады деген ұстаным.
+              </li>
+            </ul>
+          </section>
+
+          <aside class="term-card">
+            <h3>Негізгі терминдер</h3>
+            <div class="term-list">
+              <div class="term-item">
+                <b>Психофизикалық мәселе</b>
+                <span>Психикалық құбылыстар мен физиологиялық процестердің өзара қатынасын түсіндіретін методологиялық мәселе.</span>
+              </div>
+              <div class="term-item">
+                <b>Психофизиологиялық мәселе</b>
+                <span>Психика мен ми процестерінің байланысын нақты ғылыми және методологиялық тұрғыдан қарастыру.</span>
+              </div>
+              <div class="term-item">
+                <b>Өзара әрекет принципі</b>
+                <span>Физиологиялық процестер психикаға, ал психикалық процестер физиологиялық процестерге әсер етеді деген түсінік.</span>
+              </div>
+              <div class="term-item">
+                <b>Параллелизм принципі</b>
+                <span>Психикалық және физиологиялық процестер сәйкес жүреді, бірақ бір-біріне тікелей себеп болмайды деген түсінік.</span>
+              </div>
+              <div class="term-item">
+                <b>Эпифеномен</b>
+                <span>Негізгі процестің жанама, әсер етпейтін қосалқы көрінісі ретінде түсіндірілетін құбылыс.</span>
+              </div>
+              <div class="term-item">
+                <b>Редукционизм</b>
+                <span>Күрделі психологиялық құбылысты басқа деңгейдің, мысалы физиологияның ұғымдарына толық түсіруге ұмтылу.</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+
+        <section class="note-card">
+          <h3>Маңызды ұғымдар</h3>
+          <div class="subtopic-strip">
+            <span>психофизикалық мәселе</span>
+            <span>психофизиологиялық мәселе</span>
+            <span>өзара әрекет</span>
+            <span>параллелизм</span>
+            <span>эпифеномен</span>
+            <span>энергияның сақталуы</span>
+            <span>біртұтас өмірлік процесс</span>
+            <span>физиологиялық редукционизм</span>
+            <span>психологияның пәні</span>
+            <span>психологиялық заңдылық</span>
+          </div>
+        </section>
+
+        <section class="quiz-block" id="quiz-13" data-quiz="lesson13">
+          <div class="quiz-head">
+            <div>
+              <h3>Тест тапсырмалары</h3>
+              <p>Дұрыс жауапты немесе дұрыс жауаптарды таңдаңыз.</p>
+            </div>
+            <div class="score-pill">13-подраздел</div>
+          </div>
+
+          <div class="question" data-answer="C">
+            <div class="question-top">
+              <div class="q-number">1</div>
+              <div class="q-title">Психофизикалық мәселенің негізгі мазмұны</div>
+            </div>
+            <div class="answers">
+              <label class="answer"><input type="checkbox" name="q137" value="A"><span class="letter">A)</span><span>қажеттіліктің өз пәнімен кездесуін түсіндіру</span></label>
+              <label class="answer"><input type="checkbox" name="q137" value="B"><span class="letter">B)</span><span>қозғалыстың фондық деңгейлерге өтуін сипаттау</span></label>
+              <label class="answer"><input type="checkbox" name="q137" value="C"><span class="letter">C)</span><span>психикалық және физиологиялық процестердің арақатынасын анықтау</span></label>
+              <label class="answer"><input type="checkbox" name="q137" value="D"><span class="letter">D)</span><span>инстинктивті әрекеттің кілттік стимулмен қосылуын талдау</span></label>
+              <label class="answer"><input type="checkbox" name="q137" value="E"><span class="letter">E)</span><span>тілдік мағынаның қоғамдық тәжірибеде бекітілуін көрсету</span></label>
+            </div>
+            <div class="explanation">
+              Психофизикалық мәселе психикалық процестер мен физиологиялық процестердің
+              қалай байланысатынын, олардың бір-біріне қалай қатысатынын түсіндіруге бағытталған.
+            </div>
+          </div>
+
+          <div class="question" data-answer="A,D">
+            <div class="question-top">
+              <div class="q-number">2</div>
+              <div class="q-title">Психофизикалық мәселенің психология үшін методологиялық маңызы</div>
+            </div>
+            <div class="answers">
+              <label class="answer"><input type="checkbox" name="q138" value="A"><span class="letter">A)</span><span>психология пәнін анықтауға қатысуы</span></label>
+              <label class="answer"><input type="checkbox" name="q138" value="B"><span class="letter">B)</span><span>инстинкттің биологиялық мақсатқа сәйкестігін бекітуі</span></label>
+              <label class="answer"><input type="checkbox" name="q138" value="C"><span class="letter">C)</span><span>қозғалыс траекториясын стандарттандыруы</span></label>
+              <label class="answer"><input type="checkbox" name="q138" value="D"><span class="letter">D)</span><span>психологиялық түсіндірудің шегін айқындауы</span></label>
+              <label class="answer"><input type="checkbox" name="q138" value="E"><span class="letter">E)</span><span>қажеттілік түрлерін органикалық топқа бөлуі</span></label>
+              <label class="answer"><input type="checkbox" name="q138" value="F"><span class="letter">F)</span><span>сигналдық мінез-құлықты филогенезде сипаттауы</span></label>
+              <label class="answer"><input type="checkbox" name="q138" value="G"><span class="letter">G)</span><span>дағдыны фондық деңгейге толық көшіруі</span></label>
+            </div>
+            <div class="explanation">
+              Бұл мәселе психологияның пәнін, ғылыми түсіндіру тәсілдерін және
+              психиканы басқа ғылымға толық редукциялауға болмайтынын анықтауға көмектеседі.
+            </div>
+          </div>
+
+          <div class="question" data-answer="B">
+            <div class="question-top">
+              <div class="q-number">3</div>
+              <div class="q-title">Психофизикалық өзара әрекет принципінің негізгі тұжырымы</div>
+            </div>
+            <div class="answers">
+              <label class="answer"><input type="checkbox" name="q139" value="A"><span class="letter">A)</span><span>психика физиологиямен тек қатар жүріп, әсер етпейді</span></label>
+              <label class="answer"><input type="checkbox" name="q139" value="B"><span class="letter">B)</span><span>психикалық және физиологиялық процестер бір-біріне ықпал етеді</span></label>
+              <label class="answer"><input type="checkbox" name="q139" value="C"><span class="letter">C)</span><span>психика физиологиялық процестің жанама көлеңкесі болып қалады</span></label>
+              <label class="answer"><input type="checkbox" name="q139" value="D"><span class="letter">D)</span><span>психикалық процестер тек тілдік мағынамен шектеледі</span></label>
+              <label class="answer"><input type="checkbox" name="q139" value="E"><span class="letter">E)</span><span>физиологиялық процесс психологиялық заңдылыққа бағынбайды</span></label>
+            </div>
+            <div class="explanation">
+              Өзара әрекет принципі физиологиялық процестер психикаға, ал психикалық
+              процестер физиологиялық процестерге тікелей әсер етеді деп түсіндіреді.
+            </div>
+          </div>
+
+          <div class="question" data-answer="C,E,G">
+            <div class="question-top">
+              <div class="q-number">4</div>
+              <div class="q-title">Психика мен физиологияның өзара ықпалы ретінде көрінетін фактілер</div>
+            </div>
+            <div class="answers">
+              <label class="answer"><input type="checkbox" name="q140" value="A"><span class="letter">A)</span><span>қажеттіліктің заттануы арқылы мотивтің пайда болуы</span></label>
+              <label class="answer"><input type="checkbox" name="q140" value="B"><span class="letter">B)</span><span>жанардың кілттік стимулға инстинктивті жауап беруі</span></label>
+              <label class="answer"><input type="checkbox" name="q140" value="C"><span class="letter">C)</span><span>ми зақымдануынан есте сақтаудың бұзылуы</span></label>
+              <label class="answer"><input type="checkbox" name="q140" value="D"><span class="letter">D)</span><span>сөздің қоғамдық тәжірибені жалпылауы</span></label>
+              <label class="answer"><input type="checkbox" name="q140" value="E"><span class="letter">E)</span><span>психотерапиядан кейін соматикалық күйдің өзгеруі</span></label>
+              <label class="answer"><input type="checkbox" name="q140" value="F"><span class="letter">F)</span><span>перцептивтік операцияның мәдени тәжірибемен бекітілуі</span></label>
+              <label class="answer"><input type="checkbox" name="q140" value="G"><span class="letter">G)</span><span>дәрінің әсерінен эмоциялық күйдің өзгеруі</span></label>
+              <label class="answer"><input type="checkbox" name="q140" value="H"><span class="letter">H)</span><span>мақсаттың мотивпен мағыналық байланысуы</span></label>
+            </div>
+            <div class="explanation">
+              Ми патологиясы немесе дәрі психикаға әсер етуі мүмкін, ал психотерапия
+              немесе психикалық күй соматикалық процестерге әсер еткендей көрінеді.
+            </div>
+          </div>
+
+          <div class="question" data-answer="D">
+            <div class="question-top">
+              <div class="q-number">5</div>
+              <div class="q-title">Өзара әрекет теориясының энергия заңына қатысты қиындығы</div>
+            </div>
+            <div class="answers">
+              <label class="answer"><input type="checkbox" name="q141" value="A"><span class="letter">A)</span><span>психиканы тек биологиялық мотивпен түсіндіруі</span></label>
+              <label class="answer"><input type="checkbox" name="q141" value="B"><span class="letter">B)</span><span>сананы қоғамдық тәжірибеден толық ажыратуы</span></label>
+              <label class="answer"><input type="checkbox" name="q141" value="C"><span class="letter">C)</span><span>әрекеттің мақсат пен операцияға бөлінуін жоққа шығаруы</span></label>
+              <label class="answer"><input type="checkbox" name="q141" value="D"><span class="letter">D)</span><span>материалдық процестің материалдық емес себептен тууын болжауы</span></label>
+              <label class="answer"><input type="checkbox" name="q141" value="E"><span class="letter">E)</span><span>қозғалыстың кері байланыспен реттелуін жоққа шығаруы</span></label>
+            </div>
+            <div class="explanation">
+              Егер психикалық процесс материалдық емес себеп ретінде материалдық
+              процесті тудырады деп түсіндірілсе, онда энергияның сақталуы мәселесі туындайды.
+            </div>
+          </div>
+
+          <div class="question" data-answer="A,F">
+            <div class="question-top">
+              <div class="q-number">6</div>
+              <div class="q-title">Психофизикалық параллелизмге тән негізгі белгілер</div>
+            </div>
+            <div class="answers">
+              <label class="answer"><input type="checkbox" name="q142" value="A"><span class="letter">A)</span><span>психикалық және физиологиялық процестердің қатар жүруі</span></label>
+              <label class="answer"><input type="checkbox" name="q142" value="B"><span class="letter">B)</span><span>психиканың физиологияға тікелей себеп болуы</span></label>
+              <label class="answer"><input type="checkbox" name="q142" value="C"><span class="letter">C)</span><span>физиологияның психикалық процесті толық алмастыруы</span></label>
+              <label class="answer"><input type="checkbox" name="q142" value="D"><span class="letter">D)</span><span>әрекет мақсатының биологиялық мотивпен бөлінбеуі</span></label>
+              <label class="answer"><input type="checkbox" name="q142" value="E"><span class="letter">E)</span><span>жоғары психикалық функцияның әлеуметтік қалыптасуы</span></label>
+              <label class="answer"><input type="checkbox" name="q142" value="F"><span class="letter">F)</span><span>екі қатардың себептік тәуелсіз деп түсіндірілуі</span></label>
+              <label class="answer"><input type="checkbox" name="q142" value="G"><span class="letter">G)</span><span>қажеттіліктің предметке бағытталуы</span></label>
+            </div>
+            <div class="explanation">
+              Параллелизм бойынша психикалық және физиологиялық процестер сәйкес
+              жүреді, бірақ бір-біріне тікелей себептік әсер етпейді.
+            </div>
+          </div>
+
+          <div class="question" data-answer="E">
+            <div class="question-top">
+              <div class="q-number">7</div>
+              <div class="q-title">Параллелизмнің эпифеноменализмге әкелу қаупі</div>
+            </div>
+            <div class="answers">
+              <label class="answer"><input type="checkbox" name="q143" value="A"><span class="letter">A)</span><span>психиканың әрекетті мақсатпен реттеуін күшейтуі</span></label>
+              <label class="answer"><input type="checkbox" name="q143" value="B"><span class="letter">B)</span><span>сананың қоғамдық тәжірибені жинақтауын дәлелдеуі</span></label>
+              <label class="answer"><input type="checkbox" name="q143" value="C"><span class="letter">C)</span><span>психологияның өз заңдарын толық бекітуі</span></label>
+              <label class="answer"><input type="checkbox" name="q143" value="D"><span class="letter">D)</span><span>психиканы өмірлік процестің қажетті звеносы етуі</span></label>
+              <label class="answer"><input type="checkbox" name="q143" value="E"><span class="letter">E)</span><span>психиканы әсер етпейтін қосалқы құбылысқа айналдыруы</span></label>
+            </div>
+            <div class="explanation">
+              Егер психика физиологиялық процестерге еш әсер етпейді деп түсіндірілсе,
+              онда ол негізгі өмірлік процестің қажетсіз көлеңкесі сияқты көрінуі мүмкін.
+            </div>
+          </div>
+
+          <div class="question" data-answer="B,D,H">
+            <div class="question-top">
+              <div class="q-number">8</div>
+              <div class="q-title">Эпифеноменалистік көзқарастың әлсіз жақтары</div>
+            </div>
+            <div class="answers">
+              <label class="answer"><input type="checkbox" name="q144" value="A"><span class="letter">A)</span><span>психиканың пайдалы қызметін түсіндіруі</span></label>
+              <label class="answer"><input type="checkbox" name="q144" value="B"><span class="letter">B)</span><span>сананың не үшін пайда болғанын түсіндіре алмауы</span></label>
+              <label class="answer"><input type="checkbox" name="q144" value="C"><span class="letter">C)</span><span>психологиялық заңдылықтарды дербес сақтауы</span></label>
+              <label class="answer"><input type="checkbox" name="q144" value="D"><span class="letter">D)</span><span>психиканың филогенездегі дамуын түсіндіруде әлсіз болуы</span></label>
+              <label class="answer"><input type="checkbox" name="q144" value="E"><span class="letter">E)</span><span>жоғары психикалық функцияның әлеуметтік табиғатын дәлелдеуі</span></label>
+              <label class="answer"><input type="checkbox" name="q144" value="F"><span class="letter">F)</span><span>мақсат пен мотивтің байланысын ашуы</span></label>
+              <label class="answer"><input type="checkbox" name="q144" value="G"><span class="letter">G)</span><span>сананы әрекеттің қажетті бөлігі ретінде алуы</span></label>
+              <label class="answer"><input type="checkbox" name="q144" value="H"><span class="letter">H)</span><span>сана қызметін пассивті бақылауға дейін төмендетуі</span></label>
+            </div>
+            <div class="explanation">
+              Эпифеноменализм сана не үшін пайда болды, неге дамыды және өмірлік
+              процесте қандай пайдалы қызмет атқарады деген сұрақтарға толық жауап бере алмайды.
+            </div>
+          </div>
+
+          <div class="question" data-answer="C">
+            <div class="question-top">
+              <div class="q-number">9</div>
+              <div class="q-title">Психикалық және физиологиялық процестерді біртұтас процесс қырлары ретінде түсіндіру</div>
+            </div>
+            <div class="answers">
+              <label class="answer"><input type="checkbox" name="q145" value="A"><span class="letter">A)</span><span>психиканы физиологиялық процестің көлеңкесі деп санау</span></label>
+              <label class="answer"><input type="checkbox" name="q145" value="B"><span class="letter">B)</span><span>психикалық процесті материалдық емес себепке айналдыру</span></label>
+              <label class="answer"><input type="checkbox" name="q145" value="C"><span class="letter">C)</span><span>психика мен физиологияны өмірлік процестің әртүрлі талдау жақтары деп қарау</span></label>
+              <label class="answer"><input type="checkbox" name="q145" value="D"><span class="letter">D)</span><span>физиологияның психологияны толық алмастыратынын мойындау</span></label>
+              <label class="answer"><input type="checkbox" name="q145" value="E"><span class="letter">E)</span><span>сананы тек тілдік белгімен толық теңестіру</span></label>
+            </div>
+            <div class="explanation">
+              Бұл шешімде психикалық және физиологиялық процестер екі бөлек зат емес,
+              біртұтас өмірлік процестің әртүрлі талдау қырлары ретінде түсіндіріледі.
+            </div>
+          </div>
+
+          <div class="question" data-answer="A,E">
+            <div class="question-top">
+              <div class="q-number">10</div>
+              <div class="q-title">Біртұтас өмірлік процесс идеясынан шығатын қорытындылар</div>
+            </div>
+            <div class="answers">
+              <label class="answer"><input type="checkbox" name="q146" value="A"><span class="letter">A)</span><span>психикалық және физиологиялық қырлар бөлек субстанция емес</span></label>
+              <label class="answer"><input type="checkbox" name="q146" value="B"><span class="letter">B)</span><span>психика физиологиялық процестің қажетсіз қосымшасы болады</span></label>
+              <label class="answer"><input type="checkbox" name="q146" value="C"><span class="letter">C)</span><span>психология өз пәнінен толық бас тартады</span></label>
+              <label class="answer"><input type="checkbox" name="q146" value="D"><span class="letter">D)</span><span>сананың дамуы кездейсоқ мутациямен ғана түсіндіріледі</span></label>
+              <label class="answer"><input type="checkbox" name="q146" value="E"><span class="letter">E)</span><span>әр ғылым бір процестің өзіне тән қырын зерттейді</span></label>
+              <label class="answer"><input type="checkbox" name="q146" value="F"><span class="letter">F)</span><span>физиология психикалық мағынаны толық алмастырады</span></label>
+              <label class="answer"><input type="checkbox" name="q146" value="G"><span class="letter">G)</span><span>психикалық процесс тек санадан тыс механизмге тең болады</span></label>
+            </div>
+            <div class="explanation">
+              Психика мен физиология бір өмірлік процестің әртүрлі жақтары ретінде
+              қарастырылса, олар бөлек субстанция болмайды; әр ғылым өзіне тән қырды зерттейді.
+            </div>
+          </div>
+
+          <div class="question" data-answer="D">
+            <div class="question-top">
+              <div class="q-number">11</div>
+              <div class="q-title">Физиологиялық редукционизмнің негізгі ұстанымы</div>
+            </div>
+            <div class="answers">
+              <label class="answer"><input type="checkbox" name="q147" value="A"><span class="letter">A)</span><span>психологияның өз заңдылықтарын дербес сақтау</span></label>
+              <label class="answer"><input type="checkbox" name="q147" value="B"><span class="letter">B)</span><span>психиканы әлеуметтік-мәдени құралдармен түсіндіру</span></label>
+              <label class="answer"><input type="checkbox" name="q147" value="C"><span class="letter">C)</span><span>әрекетті мақсат пен мотив арқылы талдау</span></label>
+              <label class="answer"><input type="checkbox" name="q147" value="D"><span class="letter">D)</span><span>психикалық құбылыстарды толық ми физиологиясымен түсіндіру</span></label>
+              <label class="answer"><input type="checkbox" name="q147" value="E"><span class="letter">E)</span><span>сананың тілдік жалпылау арқылы қалыптасуын көрсету</span></label>
+            </div>
+            <div class="explanation">
+              Физиологиялық редукционизм психикалық құбылыстарды толықтай физиологиялық
+              процестерге түсіріп, психологияның өз талдау деңгейін әлсіретеді.
+            </div>
+          </div>
+
+          <div class="question" data-answer="B,F,H">
+            <div class="question-top">
+              <div class="q-number">12</div>
+              <div class="q-title">Физиологияның психиканы толық түсіндіруіндегі шектеулер</div>
+            </div>
+            <div class="answers">
+              <label class="answer"><input type="checkbox" name="q148" value="A"><span class="letter">A)</span><span>ми процестерін зерттеудің қажетсіз болуы</span></label>
+              <label class="answer"><input type="checkbox" name="q148" value="B"><span class="letter">B)</span><span>психологиялық мағынаны физиологиялық тілмен толық алмастыра алмауы</span></label>
+              <label class="answer"><input type="checkbox" name="q148" value="C"><span class="letter">C)</span><span>психика мен мидың байланысын толық жоққа шығаруы</span></label>
+              <label class="answer"><input type="checkbox" name="q148" value="D"><span class="letter">D)</span><span>психологияны инстинкт теориясына толық қайтаруы</span></label>
+              <label class="answer"><input type="checkbox" name="q148" value="E"><span class="letter">E)</span><span>қозғалысты кері байланыс арқылы реттеуі</span></label>
+              <label class="answer"><input type="checkbox" name="q148" value="F"><span class="letter">F)</span><span>психологияның өз талдау бірліктерін қажет етуі</span></label>
+              <label class="answer"><input type="checkbox" name="q148" value="G"><span class="letter">G)</span><span>физиологиялық механизмдерді мүлде зерттей алмауы</span></label>
+              <label class="answer"><input type="checkbox" name="q148" value="H"><span class="letter">H)</span><span>психикалық заңдылықтарды өз деңгейінде түсіндіру қажеттігі</span></label>
+            </div>
+            <div class="explanation">
+              Физиология ми механизмдерін зерттейді, бірақ психологиялық мағына,
+              мақсат, мотив, сана, тұлғалық мазмұн сияқты құбылыстарды толық алмастыра алмайды.
+            </div>
+          </div>
+
+          <div class="btn-row">
+            <button class="check-btn" type="button" onclick="checkQuiz('lesson13')">Нәтижені көрсету</button>
+            <span class="hint">Жауаптарды таңдағаннан кейін нәтижені көріңіз.</span>
+          </div>
+
+          <div class="result-panel" id="result-lesson13"></div>
+        </section>
+      </article>
+
+    </section>
+
+    <section class="section" id="section-3">
+      <div class="section-head">
+        <div>
+          <div class="section-kicker">III бөлім</div>
+          <h2>Индивид және тұлға</h2>
+          <p class="section-desc">
+            Бұл бөлімде қабілеттер, темперамент, мінез, тұлға және тұлғаның қалыптасуы
+            мәселелері қарастырылады.
+          </p>
+        </div>
+        <div class="section-badge">3 подраздел</div>
+      </div>
+
+      <div class="lecture-grid">
+        <a class="lecture-card" href="#lesson-14">
+          <div>
+            <div class="lecture-num">14</div>
+            <h3>Қабілеттер. Темперамент</h3>
+            <p>Қабілет, нышан, темперамент және индивидуалдық айырмашылықтар.</p>
+          </div>
+        </a>
+
+        <a class="lecture-card" href="#lesson-15">
+          <div>
+            <div class="lecture-num">15</div>
+            <h3>Мінез</h3>
+            <p>Мінез құрылымы, мінез бітістері және мінездің қалыптасуы.</p>
+          </div>
+        </a>
+
+        <a class="lecture-card" href="#lesson-16">
+          <div>
+            <div class="lecture-num">16</div>
+            <h3>Тұлға және оның қалыптасуы</h3>
+            <p>Тұлға, мотивтер жүйесі, өзіндік сана және тұлғалық даму.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="next-placeholder" id="lesson-14">
+        14-подраздел келесі кодта жалғасады: “Қабілеттер. Темперамент”.
+      </div>
+           <article class="lesson" id="lesson-14">
+        <div class="lesson-header">
+          <div class="lesson-title">
+            <h2>14-подраздел. Қабілеттер. Темперамент</h2>
+            <p>
+              Бұл подразделде индивид пен тұлға ұғымдарының айырмашылығы, қабілеттің
+              анықтамасы, қабілеттің білім, дағды және нышаннан айырмашылығы, қабілет
+              дамуындағы генотиптік және орта факторлары, сензитивті кезеңдер, мотивация
+              және темпераменттің динамикалық сипаттамалары қарастырылады.
+            </p>
+          </div>
+          <div class="lesson-chip">14-подраздел</div>
+        </div>
+
+        <div class="content-grid">
+          <section class="theory-card">
+            <h3>Негізгі теория</h3>
+            <p>
+              Индивид ұғымы адамды Homo sapiens түрінің өкілі ретінде сипаттайды.
+              Бұл ұғымда субъектінің тұтастығы және оны басқа адамдардан ажырататын
+              индивидуалдық қасиеттері көрінеді. Индивид ретінде адам табиғи негіздермен,
+              генотиппен және морфофизиологиялық ерекшеліктермен байланысты қарастырылады.
+            </p>
+            <p>
+              Тұлға — адамның қоғамдағы өмірі арқылы қалыптасатын сапалық жаңа құрылым.
+              Тұлға адамның қоғамдық қатынастарға енуі, мотивтер жүйесінің дамуы және
+              әлеуметтік құндылықтарды меңгеруі арқылы қалыптасады. Сондықтан индивид
+              болып адам туады, ал тұлға болып қоғамдық өмірде қалыптасады.
+            </p>
+            <p>
+              Қабілеттер — адамның белгілі бір іс-әрекетті меңгеруге және оны табысты
+              орындауға даярлығын білдіретін индивидуалды-психологиялық ерекшеліктер.
+              Қабілет кез келген айырмашылық емес: ол психологиялық сипатта болуы, адамдарда
+              әртүрлі дәрежеде көрінуі және іс-әрекет нәтижесінің табыстылығымен байланысуы керек.
+            </p>
+            <p>
+              Қабілетті біліммен, дағдымен немесе іскерлікпен теңестіруге болмайды.
+              Адам көп білімді немесе техникалық жағынан жақсы дайындалған болуы мүмкін,
+              бірақ белгілі бір іс-әрекетке қабілеті төмен болуы мүмкін. Қабілет — дайын
+              нәтиже емес, іс-әрекетті меңгеру мен орындауға ішкі даярлық.
+            </p>
+            <p>
+              Қабілеттердің дамуында табиғи алғышарттар — нышандар маңызды рөл атқаруы
+              мүмкін. Бірақ нышан қабілеттің өзі емес. Нышанның қабілетке айналуы нақты
+              даму жағдайына, жаттығуға, мәдени ортаға, сензитивті кезеңдерге және адамның
+              өз белсенділігі мен мотивациясына тәуелді.
+            </p>
+            <p>
+              Қабілеттердің дамуы тек тұқымқуалаушылықпен де, тек оқытумен де толық
+              түсіндірілмейді. Қолайлы орта, бай әсерлер, дұрыс бағытталған жаттығу,
+              эмоционалды қызығу және жоғары мотивация қабілеттің ашылуына күшті ықпал етеді.
+              Қолайсыз орта немесе шамадан тыс мәжбүрлеу қабілет дамуын тежей алады.
+            </p>
+            <p>
+              Темперамент адамның психикалық әрекетінің динамикалық сипаттамаларын білдіреді.
+              Ол адамның жалпы белсенділігінде, моторлық сферасында және эмоционалдылығында
+              көрінеді. Темперамент мазмұнды мақсатты, мотивті немесе құндылықты емес,
+              психикалық әрекеттің қарқынын, ырғағын, күшін, қозғалғыштығын сипаттайды.
+            </p>
+            <p>
+              Темпераментті түсіндіруде физиологиялық бағыт маңызды орын алды. И.П. Павлов
+              жүйке жүйесінің қасиеттері ретінде күш, тепе-теңдік және қозғалғыштықты бөліп
+              көрсетті. Кейін бұл бағыт Б.М. Теплов, В.Д. Небылицын және дифференциалды
+              психофизиологияда әрі қарай дамытылды.
+            </p>
+
+            <ul class="clean-list">
+              <li>
+                <b>Қабілет</b> — белгілі іс-әрекетті меңгеруге және табысты орындауға
+                даярлықты білдіретін индивидуалды-психологиялық ерекшелік.
+              </li>
+              <li>
+                <b>Нышан</b> — қабілет дамуының табиғи алғышарты, бірақ қабілеттің өзі емес.
+              </li>
+              <li>
+                <b>Сензитивті кезең</b> — белгілі функция немесе іс-әрекет түрін меңгеруге
+                ерекше қолайлы даму кезеңі.
+              </li>
+              <li>
+                <b>Темперамент</b> — психикалық әрекеттің динамикалық сипаттамаларының жүйесі.
+              </li>
+            </ul>
+          </section>
+
+          <aside class="term-card">
+            <h3>Негізгі терминдер</h3>
+            <div class="term-list">
+              <div class="term-item">
+                <b>Индивид</b>
+                <span>Адамды биологиялық түр өкілі және табиғи-индивидуалдық қасиеттердің иесі ретінде сипаттайтын ұғым.</span>
+              </div>
+              <div class="term-item">
+                <b>Тұлға</b>
+                <span>Қоғамдық қатынастарда, іс-әрекетте және мотивтер жүйесінің дамуында қалыптасатын сапалық жаңа құрылым.</span>
+              </div>
+              <div class="term-item">
+                <b>Қабілет</b>
+                <span>Белгілі іс-әрекетті меңгеруге және оны табысты орындауға даярлықты білдіретін индивидуалды-психологиялық ерекшелік.</span>
+              </div>
+              <div class="term-item">
+                <b>Нышан</b>
+                <span>Қабілеттің табиғи алғышарты; ол өздігінен қабілетке айналмайды, даму жағдайын қажет етеді.</span>
+              </div>
+              <div class="term-item">
+                <b>Темперамент</b>
+                <span>Психикалық әрекеттің қарқыны, ырғағы, белсенділігі және эмоционалдық қозғалғыштығы сияқты динамикалық сипаттамалар.</span>
+              </div>
+              <div class="term-item">
+                <b>Жүйке жүйесінің қасиеттері</b>
+                <span>Павлов мектебінде темпераменттің физиологиялық негізі ретінде қарастырылған күш, тепе-теңдік және қозғалғыштық.</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+
+        <section class="note-card">
+          <h3>Маңызды ұғымдар</h3>
+          <div class="subtopic-strip">
+            <span>индивид</span>
+            <span>тұлға</span>
+            <span>қабілет</span>
+            <span>нышан</span>
+            <span>білім мен дағды</span>
+            <span>генотиптік алғышарт</span>
+            <span>орта факторы</span>
+            <span>сензитивті кезең</span>
+            <span>мотивация</span>
+            <span>темперамент</span>
+            <span>жалпы белсенділік</span>
+            <span>эмоционалдылық</span>
+            <span>жүйке жүйесінің күші</span>
+            <span>жүйке жүйесінің қозғалғыштығы</span>
+          </div>
+        </section>
+
+        <section class="quiz-block" id="quiz-14" data-quiz="lesson14">
+          <div class="quiz-head">
+            <div>
+              <h3>Тест тапсырмалары</h3>
+              <p>Дұрыс жауапты немесе дұрыс жауаптарды таңдаңыз.</p>
+            </div>
+            <div class="score-pill">14-подраздел</div>
+          </div>
+
+          <div class="question" data-answer="B">
+            <div class="question-top">
+              <div class="q-number">1</div>
+              <div class="q-title">Индивид ұғымының негізгі психологиялық мазмұны</div>
+            </div>
+            <div class="answers">
+              <label class="answer"><input type="checkbox" name="q149" value="A"><span class="letter">A)</span><span>қоғамдық қатынастарда қалыптасқан мотивтер жүйесі</span></label>
+              <label class="answer"><input type="checkbox" name="q149" value="B"><span class="letter">B)</span><span>адамның түр өкілі ретіндегі тұтастығы мен табиғи даралығы</span></label>
+              <label class="answer"><input type="checkbox" name="q149" value="C"><span class="letter">C)</span><span>әрекет мақсатының мотивпен мағыналық байланысы</span></label>
+              <label class="answer"><input type="checkbox" name="q149" value="D"><span class="letter">D)</span><span>мәдени құралдар арқылы жанамаланған функциялар жүйесі</span></label>
+              <label class="answer"><input type="checkbox" name="q149" value="E"><span class="letter">E)</span><span>сананың қоғамдық тәжірибені тіл арқылы меңгеруі</span></label>
+            </div>
+            <div class="explanation">
+              Индивид ұғымы адамды Homo sapiens түрінің өкілі ретінде, оның тұтастығы
+              және табиғи-индивидуалдық ерекшеліктері тұрғысынан сипаттайды.
+            </div>
+          </div>
+
+          <div class="question" data-answer="D">
+            <div class="question-top">
+              <div class="q-number">2</div>
+              <div class="q-title">Тұлға ұғымына сәйкес сипат</div>
+            </div>
+            <div class="answers">
+              <label class="answer"><input type="checkbox" name="q150" value="A"><span class="letter">A)</span><span>тек морфофизиологиялық ерекшеліктердің жиынтығы</span></label>
+              <label class="answer"><input type="checkbox" name="q150" value="B"><span class="letter">B)</span><span>жүйке жүйесінің күшіне тікелей тең құрылым</span></label>
+              <label class="answer"><input type="checkbox" name="q150" value="C"><span class="letter">C)</span><span>қабілеттің табиғи алғышарттармен шектелуі</span></label>
+              <label class="answer"><input type="checkbox" name="q150" value="D"><span class="letter">D)</span><span>қоғамдық өмірде қалыптасатын сапалық жаңа құрылым</span></label>
+              <label class="answer"><input type="checkbox" name="q150" value="E"><span class="letter">E)</span><span>психикалық әрекеттің динамикалық қарқыны</span></label>
+            </div>
+            <div class="explanation">
+              Тұлға адам қоғамда өмір сүргенде, қоғамдық қатынастарға кіргенде,
+              мотивтер жүйесі мен әлеуметтік құндылықтарды меңгергенде қалыптасады.
+            </div>
+          </div>
+
+          <div class="question" data-answer="A,E,G">
+            <div class="question-top">
+              <div class="q-number">3</div>
+              <div class="q-title">Индивидтік қасиеттерге жататын сипаттар</div>
+            </div>
+            <div class="answers">
+              <label class="answer"><input type="checkbox" name="q151" value="A"><span class="letter">A)</span><span>морфофизиологиялық ерекшеліктер</span></label>
+              <label class="answer"><input type="checkbox" name="q151" value="B"><span class="letter">B)</span><span>қоғамдық идеалдарды саналы ұстану</span></label>
+              <label class="answer"><input type="checkbox" name="q151" value="C"><span class="letter">C)</span><span>мотивтердің қоғамдық талапқа бағынуы</span></label>
+              <label class="answer"><input type="checkbox" name="q151" value="D"><span class="letter">D)</span><span>тұлғалық жауапкершіліктің қалыптасуы</span></label>
+              <label class="answer"><input type="checkbox" name="q151" value="E"><span class="letter">E)</span><span>темперамент ерекшеліктері</span></label>
+              <label class="answer"><input type="checkbox" name="q151" value="F"><span class="letter">F)</span><span>әлеуметтік құндылықтарға саналы қатынас</span></label>
+              <label class="answer"><input type="checkbox" name="q151" value="G"><span class="letter">G)</span><span>қабілеттердің индивидуалдық айырмашылығы</span></label>
+              <label class="answer"><input type="checkbox" name="q151" value="H"><span class="letter">H)</span><span>өмірлік позицияның моральдық мазмұны</span></label>
+            </div>
+            <div class="explanation">
+              Индивидтік қасиеттерге табиғи және индивидуалдық ерекшеліктер жатады:
+              морфофизиологиялық сипаттар, темперамент, қабілеттер сияқты айырмашылықтар.
+            </div>
+          </div>
+
+          <div class="question" data-answer="C">
+            <div class="question-top">
+              <div class="q-number">4</div>
+              <div class="q-title">Қабілет ұғымының негізгі анықтамасы</div>
+            </div>
+            <div class="answers">
+              <label class="answer"><input type="checkbox" name="q152" value="A"><span class="letter">A)</span><span>дайын білімдер мен жатталған тәсілдер жиынтығы</span></label>
+              <label class="answer"><input type="checkbox" name="q152" value="B"><span class="letter">B)</span><span>темпераменттің эмоционалдық қозғалғыштық деңгейі</span></label>
+              <label class="answer"><input type="checkbox" name="q152" value="C"><span class="letter">C)</span><span>іс-әрекетті меңгеруге және табысты орындауға даярлық</span></label>
+              <label class="answer"><input type="checkbox" name="q152" value="D"><span class="letter">D)</span><span>жүйке жүйесінің физиологиялық қозу күші</span></label>
+              <label class="answer"><input type="checkbox" name="q152" value="E"><span class="letter">E)</span><span>қоғамдық қатынастарда қалыптасқан тұлғалық бағдар</span></label>
+            </div>
+            <div class="explanation">
+              Қабілет — белгілі бір іс-әрекетті меңгеруге және оны табысты орындауға
+              даярлықты білдіретін индивидуалды-психологиялық ерекшелік.
+            </div>
+          </div>
+
+          <div class="question" data-answer="B,D,F">
+            <div class="question-top">
+              <div class="q-number">5</div>
+              <div class="q-title">Қабілетке қойылатын негізгі белгілер</div>
+            </div>
+            <div class="answers">
+              <label class="answer"><input type="checkbox" name="q153" value="A"><span class="letter">A)</span><span>морфологиялық дене құрылымымен толық тең болуы</span></label>
+              <label class="answer"><input type="checkbox" name="q153" value="B"><span class="letter">B)</span><span>психологиялық табиғатқа ие болуы</span></label>
+              <label class="answer"><input type="checkbox" name="q153" value="C"><span class="letter">C)</span><span>барлық адамдарда бірдей деңгейде көрінуі</span></label>
+              <label class="answer"><input type="checkbox" name="q153" value="D"><span class="letter">D)</span><span>индивидуалды түрде әртүрлі болуы</span></label>
+              <label class="answer"><input type="checkbox" name="q153" value="E"><span class="letter">E)</span><span>дайын дағдымен толық алмастырылуы</span></label>
+              <label class="answer"><input type="checkbox" name="q153" value="F"><span class="letter">F)</span><span>іс-әрекет табыстылығымен байланысуы</span></label>
+              <label class="answer"><input type="checkbox" name="q153" value="G"><span class="letter">G)</span><span>тек темперамент қасиеттерімен шектелуі</span></label>
+              <label class="answer"><input type="checkbox" name="q153" value="H"><span class="letter">H)</span><span>қоғамдық нормаға бағынған мотив болуы</span></label>
+            </div>
+            <div class="explanation">
+              Қабілет психологиялық сипатта болуы, адамдарда әртүрлі дәрежеде көрінуі
+              және белгілі іс-әрекетті табысты орындаумен байланысуы керек.
+            </div>
+          </div>
+
+          <div class="question" data-answer="E">
+            <div class="question-top">
+              <div class="q-number">6</div>
+              <div class="q-title">Қабілетті білім, іскерлік және дағдыдан ажырататын белгі</div>
+            </div>
+            <div class="answers">
+              <label class="answer"><input type="checkbox" name="q154" value="A"><span class="letter">A)</span><span>қабілеттің толық дайын оқу нәтижесі болуы</span></label>
+              <label class="answer"><input type="checkbox" name="q154" value="B"><span class="letter">B)</span><span>қабілеттің тек жатталған операциялармен шектелуі</span></label>
+              <label class="answer"><input type="checkbox" name="q154" value="C"><span class="letter">C)</span><span>қабілеттің әлеуметтік мотивпен толық теңесуі</span></label>
+              <label class="answer"><input type="checkbox" name="q154" value="D"><span class="letter">D)</span><span>қабілеттің темперамент қарқынын ғана білдіруі</span></label>
+              <label class="answer"><input type="checkbox" name="q154" value="E"><span class="letter">E)</span><span>қабілеттің іс-әрекетті меңгеруге ішкі даярлықты білдіруі</span></label>
+            </div>
+            <div class="explanation">
+              Білім, іскерлік және дағды — меңгерілген нәтижелер. Қабілет олармен
+              тең емес, ол іс-әрекетті меңгеруге және орындауға даярлықты білдіреді.
+            </div>
+          </div>
+
+          <div class="question" data-answer="A,D">
+            <div class="question-top">
+              <div class="q-number">7</div>
+              <div class="q-title">Нышан мен қабілеттің арақатынасын сипаттайтын белгілер</div>
+            </div>
+            <div class="answers">
+              <label class="answer"><input type="checkbox" name="q155" value="A"><span class="letter">A)</span><span>нышан қабілет дамуының табиғи алғышарты болуы</span></label>
+              <label class="answer"><input type="checkbox" name="q155" value="B"><span class="letter">B)</span><span>нышанның дайын қабілетпен толық тең болуы</span></label>
+              <label class="answer"><input type="checkbox" name="q155" value="C"><span class="letter">C)</span><span>қабілеттің даму жағдайынан тәуелсіз қалыптасуы</span></label>
+              <label class="answer"><input type="checkbox" name="q155" value="D"><span class="letter">D)</span><span>нышанның қабілетке айналуы орта мен әрекетке тәуелді болуы</span></label>
+              <label class="answer"><input type="checkbox" name="q155" value="E"><span class="letter">E)</span><span>қабілеттің тек тұқымқуалайтын бағдарлама ретінде берілуі</span></label>
+              <label class="answer"><input type="checkbox" name="q155" value="F"><span class="letter">F)</span><span>нышанның тұлғалық мағынаны толық анықтауы</span></label>
+              <label class="answer"><input type="checkbox" name="q155" value="G"><span class="letter">G)</span><span>қабілеттің темпераменттен еш айырмашылығы болмауы</span></label>
+            </div>
+            <div class="explanation">
+              Нышан қабілеттің табиғи алғышарты болуы мүмкін, бірақ ол қабілеттің өзі
+              емес. Нышанның қабілетке айналуы даму жағдайына және іс-әрекетке байланысты.
+            </div>
+          </div>
+
+          <div class="question" data-answer="B,F,H">
+            <div class="question-top">
+              <div class="q-number">8</div>
+              <div class="q-title">Қабілеттің дамуына ықпал ететін факторлар</div>
+            </div>
+            <div class="answers">
+              <label class="answer"><input type="checkbox" name="q156" value="A"><span class="letter">A)</span><span>даму жағдайының толық қажетсіз болуы</span></label>
+              <label class="answer"><input type="checkbox" name="q156" value="B"><span class="letter">B)</span><span>қолайлы орта мен бай әсерлер</span></label>
+              <label class="answer"><input type="checkbox" name="q156" value="C"><span class="letter">C)</span><span>білімді механикалық жаттаумен шектелу</span></label>
+              <label class="answer"><input type="checkbox" name="q156" value="D"><span class="letter">D)</span><span>қабілетті дайын генетикалық нәтиже деп санау</span></label>
+              <label class="answer"><input type="checkbox" name="q156" value="E"><span class="letter">E)</span><span>темперамент қасиеттерін мотивпен алмастыру</span></label>
+              <label class="answer"><input type="checkbox" name="q156" value="F"><span class="letter">F)</span><span>сензитивті кезеңдегі дұрыс жаттығу</span></label>
+              <label class="answer"><input type="checkbox" name="q156" value="G"><span class="letter">G)</span><span>жеке белсенділікті толық басу</span></label>
+              <label class="answer"><input type="checkbox" name="q156" value="H"><span class="letter">H)</span><span>қызығу мен жоғары мотивация</span></label>
+            </div>
+            <div class="explanation">
+              Қабілеттің дамуына орта, жаттығу, сензитивті кезең, эмоционалды қызығу,
+              жоғары мотивация және адамның өз белсенділігі күшті әсер етеді.
+            </div>
+          </div>
+
+          <div class="question" data-answer="C">
+            <div class="question-top">
+              <div class="q-number">9</div>
+              <div class="q-title">Сензитивті кезең ұғымына сәйкес сипат</div>
+            </div>
+            <div class="answers">
+              <label class="answer"><input type="checkbox" name="q157" value="A"><span class="letter">A)</span><span>қабілеттің өмір бойы бірдей қарқынмен дамуы</span></label>
+              <label class="answer"><input type="checkbox" name="q157" value="B"><span class="letter">B)</span><span>темпераменттің жүйке жүйесі күшіне толық теңесуі</span></label>
+              <label class="answer"><input type="checkbox" name="q157" value="C"><span class="letter">C)</span><span>белгілі функцияны меңгеруге ерекше қолайлы уақыт аралығы</span></label>
+              <label class="answer"><input type="checkbox" name="q157" value="D"><span class="letter">D)</span><span>дағдының білімнен толық ажырайтын соңғы нәтижесі</span></label>
+              <label class="answer"><input type="checkbox" name="q157" value="E"><span class="letter">E)</span><span>қабілеттің әлеуметтік мотивке айналу механизмі</span></label>
+            </div>
+            <div class="explanation">
+              Сензитивті кезең — белгілі функцияны немесе іс-әрекет түрін меңгеруге
+              ерекше қолайлы даму кезеңі. Ол өтіп кетсе, кейін даму қиындайды.
+            </div>
+          </div>
+
+          <div class="question" data-answer="A,E">
+            <div class="question-top">
+              <div class="q-number">10</div>
+              <div class="q-title">Қабілеттің дамуына кері әсер етуі мүмкін жағдайлар</div>
+            </div>
+            <div class="answers">
+              <label class="answer"><input type="checkbox" name="q158" value="A"><span class="letter">A)</span><span>әсерлер мен әрекет мүмкіндігі аз обедненная орта</span></label>
+              <label class="answer"><input type="checkbox" name="q158" value="B"><span class="letter">B)</span><span>баланың өз қызығуымен ұзақ айналысуы</span></label>
+              <label class="answer"><input type="checkbox" name="q158" value="C"><span class="letter">C)</span><span>қолайлы сензитивті кезеңде дұрыс қолдау</span></label>
+              <label class="answer"><input type="checkbox" name="q158" value="D"><span class="letter">D)</span><span>іс-әрекетке эмоционалды қызығудың сақталуы</span></label>
+              <label class="answer"><input type="checkbox" name="q158" value="E"><span class="letter">E)</span><span>шамадан тыс мәжбүрлеу арқылы спонтанды белсенділікті өшіру</span></label>
+              <label class="answer"><input type="checkbox" name="q158" value="F"><span class="letter">F)</span><span>орта мен жаттығудың генотиптік алғышартпен үйлесуі</span></label>
+              <label class="answer"><input type="checkbox" name="q158" value="G"><span class="letter">G)</span><span>жоғары мотивацияның табиғи әрекетке айналуы</span></label>
+            </div>
+            <div class="explanation">
+              Қабілет дамуын обедненная орта, әсерлердің жетіспеуі, психикалық жарақаттар
+              және шамадан тыс мәжбүрлеу тежей алады.
+            </div>
+          </div>
+
+          <div class="question" data-answer="D">
+            <div class="question-top">
+              <div class="q-number">11</div>
+              <div class="q-title">Темперамент ұғымының негізгі анықтамасы</div>
+            </div>
+            <div class="answers">
+              <label class="answer"><input type="checkbox" name="q159" value="A"><span class="letter">A)</span><span>адамның қоғамдық құндылықтарды меңгеру деңгейі</span></label>
+              <label class="answer"><input type="checkbox" name="q159" value="B"><span class="letter">B)</span><span>белгілі іс-әрекетке табысты даярлық жүйесі</span></label>
+              <label class="answer"><input type="checkbox" name="q159" value="C"><span class="letter">C)</span><span>әрекеттің мотивпен байланысқан тұлғалық мағынасы</span></label>
+              <label class="answer"><input type="checkbox" name="q159" value="D"><span class="letter">D)</span><span>психикалық әрекеттің динамикалық сипаттамалары</span></label>
+              <label class="answer"><input type="checkbox" name="q159" value="E"><span class="letter">E)</span><span>мәдени құралдарды ішкі жоспарға көшіру процесі</span></label>
+            </div>
+            <div class="explanation">
+              Темперамент адамның психикалық әрекетінің динамикалық сипаттамаларын:
+              қарқын, ырғақ, белсенділік, қозғалғыштық және эмоционалдылықты білдіреді.
+            </div>
+          </div>
+
+          <div class="question" data-answer="A,D,F">
+            <div class="question-top">
+              <div class="q-number">12</div>
+              <div class="q-title">Темпераменттің негізгі көріну сфералары</div>
+            </div>
+            <div class="answers">
+              <label class="answer"><input type="checkbox" name="q160" value="A"><span class="letter">A)</span><span>жалпы белсенділік</span></label>
+              <label class="answer"><input type="checkbox" name="q160" value="B"><span class="letter">B)</span><span>әлеуметтік құндылықтар жүйесі</span></label>
+              <label class="answer"><input type="checkbox" name="q160" value="C"><span class="letter">C)</span><span>іс-әрекеттің тұлғалық мағынасы</span></label>
+              <label class="answer"><input type="checkbox" name="q160" value="D"><span class="letter">D)</span><span>моторлық сфера ерекшеліктері</span></label>
+              <label class="answer"><input type="checkbox" name="q160" value="E"><span class="letter">E)</span><span>мотивтер иерархиясының құрылымы</span></label>
+              <label class="answer"><input type="checkbox" name="q160" value="F"><span class="letter">F)</span><span>эмоционалдылық қасиеттері</span></label>
+              <label class="answer"><input type="checkbox" name="q160" value="G"><span class="letter">G)</span><span>жоғары психикалық функцияның әлеуметтік шығуы</span></label>
+              <label class="answer"><input type="checkbox" name="q160" value="H"><span class="letter">H)</span><span>қабілеттің біліммен қатынасы</span></label>
+            </div>
+            <div class="explanation">
+              Темперамент үш негізгі сферада көрінеді: жалпы белсенділік, моторлық
+              сфера және эмоционалдылық.
+            </div>
+          </div>
+
+          <div class="question" data-answer="B,E">
+            <div class="question-top">
+              <div class="q-number">13</div>
+              <div class="q-title">Моторлық сферадағы темперамент көріністері</div>
+            </div>
+            <div class="answers">
+              <label class="answer"><input type="checkbox" name="q161" value="A"><span class="letter">A)</span><span>әрекеттің қоғамдық мотивпен байланысуы</span></label>
+              <label class="answer"><input type="checkbox" name="q161" value="B"><span class="letter">B)</span><span>қимылдың темпі мен жылдамдығы</span></label>
+              <label class="answer"><input type="checkbox" name="q161" value="C"><span class="letter">C)</span><span>қабілеттің дамуындағы сензитивті кезең</span></label>
+              <label class="answer"><input type="checkbox" name="q161" value="D"><span class="letter">D)</span><span>тұлғаның моральдық жауапкершілігі</span></label>
+              <label class="answer"><input type="checkbox" name="q161" value="E"><span class="letter">E)</span><span>қозғалыстың ырғағы мен жалпы мөлшері</span></label>
+              <label class="answer"><input type="checkbox" name="q161" value="F"><span class="letter">F)</span><span>білім мен дағдының меңгерілу деңгейі</span></label>
+              <label class="answer"><input type="checkbox" name="q161" value="G"><span class="letter">G)</span><span>қажеттіліктің пәнге бағытталуы</span></label>
+            </div>
+            <div class="explanation">
+              Темпераменттің моторлық көріністеріне қимылдың темпі, жылдамдығы,
+              ырғағы және қозғалыстың жалпы мөлшері жатады.
+            </div>
+          </div>
+
+          <div class="question" data-answer="C">
+            <div class="question-top">
+              <div class="q-number">14</div>
+              <div class="q-title">Темпераменттегі эмоционалдылықты сипаттайтын белгі</div>
+            </div>
+            <div class="answers">
+              <label class="answer"><input type="checkbox" name="q162" value="A"><span class="letter">A)</span><span>іс-әрекеттің қоғамдық нәтижеге бағытталуы</span></label>
+              <label class="answer"><input type="checkbox" name="q162" value="B"><span class="letter">B)</span><span>қабілеттің арнайы жаттығу арқылы дамуы</span></label>
+              <label class="answer"><input type="checkbox" name="q162" value="C"><span class="letter">C)</span><span>әсерленгіштік, сезімталдық және импульсивтілік</span></label>
+              <label class="answer"><input type="checkbox" name="q162" value="D"><span class="letter">D)</span><span>жеке сананың қоғамдық тәжірибені меңгеруі</span></label>
+              <label class="answer"><input type="checkbox" name="q162" value="E"><span class="letter">E)</span><span>мақсаттың мотивтен бөлініп шығуы</span></label>
+            </div>
+            <div class="explanation">
+              Темпераменттегі эмоционалдылық әсерленгіштік, сезімталдық,
+              импульсивтілік және эмоциялық реакциялардың динамикасымен сипатталады.
+            </div>
+          </div>
+
+          <div class="question" data-answer="A,D,F">
+            <div class="question-top">
+              <div class="q-number">15</div>
+              <div class="q-title">И.П. Павлов бөліп көрсеткен жүйке жүйесінің негізгі қасиеттері</div>
+            </div>
+            <div class="answers">
+              <label class="answer"><input type="checkbox" name="q163" value="A"><span class="letter">A)</span><span>жүйке процестерінің күші</span></label>
+              <label class="answer"><input type="checkbox" name="q163" value="B"><span class="letter">B)</span><span>қабілеттің тұлғалық мағынасы</span></label>
+              <label class="answer"><input type="checkbox" name="q163" value="C"><span class="letter">C)</span><span>іс-әрекет мотивінің иерархиясы</span></label>
+              <label class="answer"><input type="checkbox" name="q163" value="D"><span class="letter">D)</span><span>қозу мен тежелудің тепе-теңдігі</span></label>
+              <label class="answer"><input type="checkbox" name="q163" value="E"><span class="letter">E)</span><span>білімді меңгеруге дайындық</span></label>
+              <label class="answer"><input type="checkbox" name="q163" value="F"><span class="letter">F)</span><span>жүйке процестерінің қозғалғыштығы</span></label>
+              <label class="answer"><input type="checkbox" name="q163" value="G"><span class="letter">G)</span><span>қоғамдық сананың интериоризациясы</span></label>
+              <label class="answer"><input type="checkbox" name="q163" value="H"><span class="letter">H)</span><span>мақсат пен мотивтің бөлінуі</span></label>
+            </div>
+            <div class="explanation">
+              Павлов жүйке жүйесінің үш негізгі қасиетін көрсетті: күш, тепе-теңдік
+              және қозғалғыштық. Олар темпераменттің физиологиялық негізін түсіндіруде қолданылды.
+            </div>
+          </div>
+
+          <div class="question" data-answer="E">
+            <div class="question-top">
+              <div class="q-number">16</div>
+              <div class="q-title">Темпераментті қабілеттен ажырататын негізгі айырмашылық</div>
+            </div>
+            <div class="answers">
+              <label class="answer"><input type="checkbox" name="q164" value="A"><span class="letter">A)</span><span>темпераменттің іс-әрекет табыстылығына даярлықты білдіруі</span></label>
+              <label class="answer"><input type="checkbox" name="q164" value="B"><span class="letter">B)</span><span>қабілеттің психикалық әрекет қарқынымен ғана шектелуі</span></label>
+              <label class="answer"><input type="checkbox" name="q164" value="C"><span class="letter">C)</span><span>темпераменттің білім мен дағдыға толық тең болуы</span></label>
+              <label class="answer"><input type="checkbox" name="q164" value="D"><span class="letter">D)</span><span>қабілеттің тек эмоциялық импульсивтілікпен анықталуы</span></label>
+              <label class="answer"><input type="checkbox" name="q164" value="E"><span class="letter">E)</span><span>темпераменттің психикалық әрекет динамикасын сипаттауы</span></label>
+            </div>
+            <div class="explanation">
+              Қабілет іс-әрекетті меңгеру мен табысты орындауға даярлықты білдіреді.
+              Темперамент іс-әрекеттің мазмұнын емес, оның динамикасын сипаттайды.
+            </div>
+          </div>
+
+          <div class="btn-row">
+            <button class="check-btn" type="button" onclick="checkQuiz('lesson14')">Нәтижені көрсету</button>
+            <span class="hint">Жауаптарды таңдағаннан кейін нәтижені көріңіз.</span>
+          </div>
+
+          <div class="result-panel" id="result-lesson14"></div>
+        </section>
+      </article>
+
+      <div class="next-placeholder" id="lesson-15">
+        15-подраздел келесі кодта жалғасады: “Мінез”.
+      </div>
+           <article class="lesson" id="lesson-15">
+        <div class="lesson-header">
+          <div class="lesson-title">
+            <h2>15-подраздел. Мінез</h2>
+            <p>
+              Бұл подразделде мінездің тұрақты жеке ерекшелік ретінде көрінуі,
+              психопатия мен акцентуацияның айырмашылығы, мінездің “әлсіз буыны”,
+              мінездің биологиялық және әлеуметтік алғышарттары, сондай-ақ мінез бен
+              тұлғаның өзара байланысы қарастырылады.
+            </p>
+          </div>
+          <div class="lesson-chip">15-подраздел</div>
+        </div>
+
+        <div class="content-grid">
+          <section class="theory-card">
+            <h3>Негізгі теория</h3>
+            <p>
+              Мінез адамның мінез-құлқында, қарым-қатынасында және өмірлік жағдайларға
+              жауап беру тәсілінде көрінетін тұрақты индивидуалдық ерекшеліктер жүйесі
+              ретінде қарастырылады. Мінез темпераментпен байланысты болғанымен, оған
+              толық тең емес: темперамент динамиканы сипаттаса, мінез адамның жағдайларға
+              жауап беруінің тұрақты психологиялық тәсілдерін көрсетеді.
+            </p>
+            <p>
+              Мінездің патологиялық көрінісі психопатия деп бағалануы мүмкін. Мұндай
+              жағдайда үш негізгі белгі маңызды: мінездің уақыт бойынша салыстырмалы
+              тұрақтылығы, мінез көріністерінің тоталдылығы және әлеуметтік дезадаптация.
+              Егер бірдей мінез бітістері өмірдің әртүрлі саласында тұрақты көрініп,
+              адамның өзіне немесе айналасына ұзақ қиындық тудырса, бұл патологиялық
+              деңгейге жақындайды.
+            </p>
+            <p>
+              Акцентуация — қалыпты мінездің шеткі варианты. Акцентуация психопатия емес,
+              себебі онда үш белгі бірдей және тұрақты түрде болмайды. Акцентуация көбіне
+              жасөспірімдік кезеңде күшеюі, кейін жұмсаруы мүмкін; ол барлық жағдайда емес,
+              белгілі бір қиын жағдайларда ғана айқын көрінеді.
+            </p>
+            <p>
+              Акцентуацияны түсінуде “әлсіз буын” немесе “ең төмен қарсыласу орны” ұғымы
+              маңызды. Әр мінез типінде ерекше ауыр тиетін жағдайлар болады. Мысалы, бір
+              тип үшін қатаң регламентация қиын болса, басқа тип үшін бейресми эмоциялық
+              қарым-қатынасқа түсу ауыр болуы мүмкін.
+            </p>
+            <p>
+              Мінездің қалыптасуында биологиялық және орта факторлары бірге әрекет етеді.
+              Генотиптік алғышарттар мінездің белгілі бір негіздерін бере алады, бірақ олар
+              тағдырды толық алдын ала анықтамайды. Нақты мінез белгілері тәрбие, әлеуметтік
+              орта, өмір жағдайлары және адамның өз белсенділігі арқылы қалыптасады.
+            </p>
+            <p>
+              Мінез бен тұлғаның арақатынасы ерекше маңызды. Индивидтік қасиеттер тұлға
+              қалыптасуының шарты немесе алғышарты болуы мүмкін. Бірақ тұлға дамыған сайын
+              адам тек “қалай келеді” деген табиғи мінез импульстарымен емес, “қалай керек”,
+              “қалай дұрыс” деген әлеуметтік-нормативтік өлшемдермен әрекет ете бастайды.
+            </p>
+            <p>
+              Сондықтан тұлға белгілі бір деңгейде мінезді “алып тастайды” немесе қайта
+              өңдейді: адам өзінің мінез ерекшеліктерін басқарып, оларды жоғары мотивтерге,
+              құндылықтарға және әлеуметтік жауапкершілікке бағындыруы мүмкін.
+            </p>
+
+            <ul class="clean-list">
+              <li>
+                <b>Мінез</b> — адамның жағдайларға, адамдарға және әрекетке тұрақты
+                жауап беру тәсілдерін білдіретін индивидуалдық ерекшеліктер жүйесі.
+              </li>
+              <li>
+                <b>Психопатия</b> — мінездің тұрақты, тоталды және әлеуметтік
+                дезадаптация туғызатын патологиялық көрінісі.
+              </li>
+              <li>
+                <b>Акцентуация</b> — қалыпты мінездің шеткі варианты, белгілі жағдайда
+                айқын көрінетін мінез ерекшелігі.
+              </li>
+              <li>
+                <b>Әлсіз буын</b> — белгілі мінез типі үшін ерекше ауыр, дезадаптация
+                тудыруы мүмкін жағдайлар аймағы.
+              </li>
+            </ul>
+          </section>
+
+          <aside class="term-card">
+            <h3>Негізгі терминдер</h3>
+            <div class="term-list">
+              <div class="term-item">
+                <b>Мінез</b>
+                <span>Адамның өмірлік жағдайларға, басқа адамдарға және өзіне қатынасында көрінетін тұрақты психологиялық ерекшеліктер жүйесі.</span>
+              </div>
+              <div class="term-item">
+                <b>Психопатия</b>
+                <span>Мінездің тұрақты, тоталды және әлеуметтік бейімделуді бұзатын патологиялық деңгейі.</span>
+              </div>
+              <div class="term-item">
+                <b>Тоталдылық</b>
+                <span>Мінез ерекшелігінің үйде де, жұмыста да, жақындармен де, бөтендермен де әртүрлі жағдайда көрінуі.</span>
+              </div>
+              <div class="term-item">
+                <b>Әлеуметтік дезадаптация</b>
+                <span>Мінез ерекшеліктерінен адамның өзіне немесе айналасына тұрақты өмірлік қиындықтардың туындауы.</span>
+              </div>
+              <div class="term-item">
+                <b>Акцентуация</b>
+                <span>Патология емес, бірақ белгілі жағдайларда қиындық тудыруы мүмкін қалыпты мінездің шеткі варианты.</span>
+              </div>
+              <div class="term-item">
+                <b>Әлсіз буын</b>
+                <span>Белгілі мінез типіне ең ауыр әсер ететін, мінез ерекшелігін күрт күшейтетін жағдай.</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+
+        <section class="note-card">
+          <h3>Маңызды ұғымдар</h3>
+          <div class="subtopic-strip">
+            <span>мінез</span>
+            <span>психопатия</span>
+            <span>тұрақтылық</span>
+            <span>тоталдылық</span>
+            <span>әлеуметтік дезадаптация</span>
+            <span>акцентуация</span>
+            <span>әлсіз буын</span>
+            <span>гипертимді тип</span>
+            <span>шизоидты тип</span>
+            <span>биологиялық алғышарт</span>
+            <span>орта факторы</span>
+            <span>мінез және тұлға</span>
+          </div>
+        </section>
+
+        <section class="quiz-block" id="quiz-15" data-quiz="lesson15">
+          <div class="quiz-head">
+            <div>
+              <h3>Тест тапсырмалары</h3>
+              <p>Дұрыс жауапты немесе дұрыс жауаптарды таңдаңыз.</p>
+            </div>
+            <div class="score-pill">15-подраздел</div>
+          </div>
+
+          <div class="question" data-answer="C">
+            <div class="question-top">
+              <div class="q-number">1</div>
+              <div class="q-title">Мінез ұғымына сәйкес негізгі сипат</div>
+            </div>
+            <div class="answers">
+              <label class="answer"><input type="checkbox" name="q165" value="A"><span class="letter">A)</span><span>психикалық әрекеттің тек қарқыны мен ырғағы</span></label>
+              <label class="answer"><input type="checkbox" name="q165" value="B"><span class="letter">B)</span><span>іс-әрекетті табысты меңгеруге даярлық</span></label>
+              <label class="answer"><input type="checkbox" name="q165" value="C"><span class="letter">C)</span><span>жағдайларға жауап берудің тұрақты психологиялық тәсілдері</span></label>
+              <label class="answer"><input type="checkbox" name="q165" value="D"><span class="letter">D)</span><span>жүйке жүйесінің физиологиялық қозғалғыштық қасиеті</span></label>
+              <label class="answer"><input type="checkbox" name="q165" value="E"><span class="letter">E)</span><span>қоғамдық тәжірибені тіл арқылы жалпылау процесі</span></label>
+            </div>
+            <div class="explanation">
+              Мінез адамның жағдайларға, адамдарға, әрекетке және өзіне жауап беруінің
+              тұрақты психологиялық тәсілдері арқылы көрінеді.
+            </div>
+          </div>
+
+          <div class="question" data-answer="B,E,H">
+            <div class="question-top">
+              <div class="q-number">2</div>
+              <div class="q-title">Психопатияны сипаттайтын негізгі белгілер</div>
+            </div>
+            <div class="answers">
+              <label class="answer"><input type="checkbox" name="q166" value="A"><span class="letter">A)</span><span>қабілеттің сензитивті кезеңде дамуы</span></label>
+              <label class="answer"><input type="checkbox" name="q166" value="B"><span class="letter">B)</span><span>мінез ерекшелігінің уақыт бойынша тұрақтылығы</span></label>
+              <label class="answer"><input type="checkbox" name="q166" value="C"><span class="letter">C)</span><span>темпераменттің моторлық қарқында көрінуі</span></label>
+              <label class="answer"><input type="checkbox" name="q166" value="D"><span class="letter">D)</span><span>мотивтің мақсатқа ауысу механизмі</span></label>
+              <label class="answer"><input type="checkbox" name="q166" value="E"><span class="letter">E)</span><span>мінез көріністерінің әртүрлі жағдайда тоталды болуы</span></label>
+              <label class="answer"><input type="checkbox" name="q166" value="F"><span class="letter">F)</span><span>қоғамдық тәжірибені меңгеру арқылы сана қалыптасуы</span></label>
+              <label class="answer"><input type="checkbox" name="q166" value="G"><span class="letter">G)</span><span>қозғалыстың фондық деңгейге автоматтануы</span></label>
+              <label class="answer"><input type="checkbox" name="q166" value="H"><span class="letter">H)</span><span>тұрақты әлеуметтік дезадаптацияның туындауы</span></label>
+            </div>
+            <div class="explanation">
+              Психопатия үшін үш белгі маңызды: мінездің уақыт бойынша тұрақтылығы,
+              көріністерінің тоталдылығы және әлеуметтік дезадаптация туғызуы.
+            </div>
+          </div>
+
+          <div class="question" data-answer="D">
+            <div class="question-top">
+              <div class="q-number">3</div>
+              <div class="q-title">Мінез көріністерінің тоталдылығы білдіреді</div>
+            </div>
+            <div class="answers">
+              <label class="answer"><input type="checkbox" name="q167" value="A"><span class="letter">A)</span><span>мінездің тек бір қысқа жағдайда байқалуын</span></label>
+              <label class="answer"><input type="checkbox" name="q167" value="B"><span class="letter">B)</span><span>мінездің тек қабілет дамуында көрінуін</span></label>
+              <label class="answer"><input type="checkbox" name="q167" value="C"><span class="letter">C)</span><span>мінездің тек моторлық қозғалыстармен шектелуін</span></label>
+              <label class="answer"><input type="checkbox" name="q167" value="D"><span class="letter">D)</span><span>бірдей бітістердің өмірдің әртүрлі жағдайында көрінуін</span></label>
+              <label class="answer"><input type="checkbox" name="q167" value="E"><span class="letter">E)</span><span>жүйке жүйесінің күшін мінезбен толық теңестіруді</span></label>
+            </div>
+            <div class="explanation">
+              Тоталдылық — бірдей мінез бітістерінің үйде, жұмыста, жақындармен,
+              бөтендермен және әртүрлі өмірлік жағдайда қайталанып көрінуі.
+            </div>
+          </div>
+
+          <div class="question" data-answer="A,F">
+            <div class="question-top">
+              <div class="q-number">4</div>
+              <div class="q-title">Әлеуметтік дезадаптацияға тән белгілер</div>
+            </div>
+            <div class="answers">
+              <label class="answer"><input type="checkbox" name="q168" value="A"><span class="letter">A)</span><span>мінезден адамның өзіне тұрақты қиындық тууы</span></label>
+              <label class="answer"><input type="checkbox" name="q168" value="B"><span class="letter">B)</span><span>әрекеттің техникасы фондық деңгейге өтуі</span></label>
+              <label class="answer"><input type="checkbox" name="q168" value="C"><span class="letter">C)</span><span>қабілет дамуының мотивациямен күшеюі</span></label>
+              <label class="answer"><input type="checkbox" name="q168" value="D"><span class="letter">D)</span><span>сөздің заттарды жалпылап белгілеуі</span></label>
+              <label class="answer"><input type="checkbox" name="q168" value="E"><span class="letter">E)</span><span>темпераменттің жалпы белсенділік ретінде көрінуі</span></label>
+              <label class="answer"><input type="checkbox" name="q168" value="F"><span class="letter">F)</span><span>мінезден айналадағы адамдарға тұрақты қиындық тууы</span></label>
+              <label class="answer"><input type="checkbox" name="q168" value="G"><span class="letter">G)</span><span>нышанның даму жағдайына тәуелді болуы</span></label>
+            </div>
+            <div class="explanation">
+              Әлеуметтік дезадаптация мінез ерекшеліктерінің адамның өзіне немесе
+              айналасындағы адамдарға тұрақты өмірлік қиындық тудыруымен сипатталады.
+            </div>
+          </div>
+
+          <div class="question" data-answer="B">
+            <div class="question-top">
+              <div class="q-number">5</div>
+              <div class="q-title">Акцентуация ұғымының негізгі анықтамасы</div>
+            </div>
+            <div class="answers">
+              <label class="answer"><input type="checkbox" name="q169" value="A"><span class="letter">A)</span><span>мінездің тұрақты тоталды патологиялық бұзылысы</span></label>
+              <label class="answer"><input type="checkbox" name="q169" value="B"><span class="letter">B)</span><span>қалыпты мінездің шеткі варианты</span></label>
+              <label class="answer"><input type="checkbox" name="q169" value="C"><span class="letter">C)</span><span>қабілеттің табиғи нышанмен толық теңдігі</span></label>
+              <label class="answer"><input type="checkbox" name="q169" value="D"><span class="letter">D)</span><span>темпераменттің физиологиялық күшпен өлшенуі</span></label>
+              <label class="answer"><input type="checkbox" name="q169" value="E"><span class="letter">E)</span><span>тұлғаның әлеуметтік мотивтер жүйесі</span></label>
+            </div>
+            <div class="explanation">
+              Акцентуация — патология емес, қалыпты мінездің шеткі варианты.
+              Ол белгілі жағдайларда қиындық тудыруы мүмкін.
+            </div>
+          </div>
+
+          <div class="question" data-answer="C,E,G">
+            <div class="question-top">
+              <div class="q-number">6</div>
+              <div class="q-title">Акцентуацияның психопатиядан айырмашылықтары</div>
+            </div>
+            <div class="answers">
+              <label class="answer"><input type="checkbox" name="q170" value="A"><span class="letter">A)</span><span>әрқашан өмір бойы өзгермей сақталуы</span></label>
+              <label class="answer"><input type="checkbox" name="q170" value="B"><span class="letter">B)</span><span>барлық жағдайда міндетті тоталды көрінуі</span></label>
+              <label class="answer"><input type="checkbox" name="q170" value="C"><span class="letter">C)</span><span>көбіне жасөспірімдік кезеңде күшейіп, кейін жұмсаруы</span></label>
+              <label class="answer"><input type="checkbox" name="q170" value="D"><span class="letter">D)</span><span>міндетті түрде тұрақты әлеуметтік дезадаптация туғызуы</span></label>
+              <label class="answer"><input type="checkbox" name="q170" value="E"><span class="letter">E)</span><span>барлық жағдайда емес, ерекше жағдайда айқын көрінуі</span></label>
+              <label class="answer"><input type="checkbox" name="q170" value="F"><span class="letter">F)</span><span>психологиялық нормадан толық тыс болуы</span></label>
+              <label class="answer"><input type="checkbox" name="q170" value="G"><span class="letter">G)</span><span>дезадаптацияның қысқа немесе мүлде болмауы мүмкіндігі</span></label>
+              <label class="answer"><input type="checkbox" name="q170" value="H"><span class="letter">H)</span><span>биологиялық фактордың міндетті абсолютті басымдығы</span></label>
+            </div>
+            <div class="explanation">
+              Акцентуацияда психопатияның үш белгісі бірдей тұрақты болмайды: ол
+              жасөспірімде күшеюі, кейін жұмсаруы, ерекше жағдайда ғана айқын көрінуі мүмкін.
+            </div>
+          </div>
+
+          <div class="question" data-answer="E">
+            <div class="question-top">
+              <div class="q-number">7</div>
+              <div class="q-title">“Әлсіз буын” ұғымының психологиялық мәні</div>
+            </div>
+            <div class="answers">
+              <label class="answer"><input type="checkbox" name="q171" value="A"><span class="letter">A)</span><span>қабілеттің сензитивті кезеңдегі даму мүмкіндігі</span></label>
+              <label class="answer"><input type="checkbox" name="q171" value="B"><span class="letter">B)</span><span>темпераменттің моторлық қарқыны мен ырғағы</span></label>
+              <label class="answer"><input type="checkbox" name="q171" value="C"><span class="letter">C)</span><span>тұлғаның қоғамдық құндылықтарды меңгеруі</span></label>
+              <label class="answer"><input type="checkbox" name="q171" value="D"><span class="letter">D)</span><span>мінездің барлық жағдайда бірдей байқалуы</span></label>
+              <label class="answer"><input type="checkbox" name="q171" value="E"><span class="letter">E)</span><span>белгілі мінез типі үшін ең ауыр жағдайлар аймағы</span></label>
+            </div>
+            <div class="explanation">
+              “Әлсіз буын” — белгілі мінез типі үшін ерекше ауыр, мінез ерекшелігін
+              күрт күшейтетін немесе уақытша дезадаптация тудыратын жағдай.
+            </div>
+          </div>
+
+          <div class="question" data-answer="A,D,F">
+            <div class="question-top">
+              <div class="q-number">8</div>
+              <div class="q-title">А.Е. Личко бойынша акцентуация типтеріне жататындар</div>
+            </div>
+            <div class="answers">
+              <label class="answer"><input type="checkbox" name="q172" value="A"><span class="letter">A)</span><span>гипертимді тип</span></label>
+              <label class="answer"><input type="checkbox" name="q172" value="B"><span class="letter">B)</span><span>перцептивтік тип</span></label>
+              <label class="answer"><input type="checkbox" name="q172" value="C"><span class="letter">C)</span><span>операциялық тип</span></label>
+              <label class="answer"><input type="checkbox" name="q172" value="D"><span class="letter">D)</span><span>шизоидты тип</span></label>
+              <label class="answer"><input type="checkbox" name="q172" value="E"><span class="letter">E)</span><span>сенсорлық тип</span></label>
+              <label class="answer"><input type="checkbox" name="q172" value="F"><span class="letter">F)</span><span>эпилептоидты тип</span></label>
+              <label class="answer"><input type="checkbox" name="q172" value="G"><span class="letter">G)</span><span>психофизикалық тип</span></label>
+              <label class="answer"><input type="checkbox" name="q172" value="H"><span class="letter">H)</span><span>рефлекторлық тип</span></label>
+            </div>
+            <div class="explanation">
+              Личко гипертимді, циклоидты, лабильді, астено-невротикалық, сензитивті,
+              психастеникалық, шизоидты, эпилептоидты, истероидты, тұрақсыз және конформды типтерді ажыратқан.
+            </div>
+          </div>
+
+          <div class="question" data-answer="B">
+            <div class="question-top">
+              <div class="q-number">9</div>
+              <div class="q-title">Гипертимді тип үшін ерекше қиын жағдай</div>
+            </div>
+            <div class="answers">
+              <label class="answer"><input type="checkbox" name="q173" value="A"><span class="letter">A)</span><span>дербес бастамаға мүмкіндік берілген орта</span></label>
+              <label class="answer"><input type="checkbox" name="q173" value="B"><span class="letter">B)</span><span>қатаң регламент пен мәжбүрлі әрекетсіздік жағдайы</span></label>
+              <label class="answer"><input type="checkbox" name="q173" value="C"><span class="letter">C)</span><span>жаңа әсерлер мен кең қарым-қатынас мүмкіндігі</span></label>
+              <label class="answer"><input type="checkbox" name="q173" value="D"><span class="letter">D)</span><span>еркін қозғалыс пен лидерлікке жол ашылған жағдай</span></label>
+              <label class="answer"><input type="checkbox" name="q173" value="E"><span class="letter">E)</span><span>белсенділік пен бастаманы қолдайтын қатынас</span></label>
+            </div>
+            <div class="explanation">
+              Гипертимді тип үшін мінез-құлықты қатаң регламенттеу, монотонды еңбек
+              және мәжбүрлі әрекетсіздік ауыр жағдай болуы мүмкін.
+            </div>
+          </div>
+
+          <div class="question" data-answer="D">
+            <div class="question-top">
+              <div class="q-number">10</div>
+              <div class="q-title">Шизоидты акцентуация үшін ауыр жағдай</div>
+            </div>
+            <div class="answers">
+              <label class="answer"><input type="checkbox" name="q174" value="A"><span class="letter">A)</span><span>жеке ішкі әлемді сақтауға мүмкіндік болуы</span></label>
+              <label class="answer"><input type="checkbox" name="q174" value="B"><span class="letter">B)</span><span>формалды міндеттің нақты белгіленуі</span></label>
+              <label class="answer"><input type="checkbox" name="q174" value="C"><span class="letter">C)</span><span>жалғыз орындауға болатын тұрақты тапсырма</span></label>
+              <label class="answer"><input type="checkbox" name="q174" value="D"><span class="letter">D)</span><span>бейресми эмоциялық байланысқа үнемі түсу қажеттігі</span></label>
+              <label class="answer"><input type="checkbox" name="q174" value="E"><span class="letter">E)</span><span>ішкі шекараға сақтықпен қаралатын жағдай</span></label>
+            </div>
+            <div class="explanation">
+              Шизоидты тип үшін бейресми эмоциялық байланыстар орнату, басқа адамның
+              көңіл-күйін нәзік сезу және ішкі әлеміне қысым түсу ауыр болуы мүмкін.
+            </div>
+          </div>
+
+          <div class="question" data-answer="A,E">
+            <div class="question-top">
+              <div class="q-number">11</div>
+              <div class="q-title">Мінездің қалыптасуына әсер ететін негізгі факторлар</div>
+            </div>
+            <div class="answers">
+              <label class="answer"><input type="checkbox" name="q175" value="A"><span class="letter">A)</span><span>генотиптік алғышарттар</span></label>
+              <label class="answer"><input type="checkbox" name="q175" value="B"><span class="letter">B)</span><span>психофизикалық параллелизм</span></label>
+              <label class="answer"><input type="checkbox" name="q175" value="C"><span class="letter">C)</span><span>қозғалыстың сенсорлық коррекциясы</span></label>
+              <label class="answer"><input type="checkbox" name="q175" value="D"><span class="letter">D)</span><span>тілдің жалпылаушы қызметі</span></label>
+              <label class="answer"><input type="checkbox" name="q175" value="E"><span class="letter">E)</span><span>тәрбие мен орта әсерлері</span></label>
+              <label class="answer"><input type="checkbox" name="q175" value="F"><span class="letter">F)</span><span>қабілеттің арнайы сензитивті кезеңі</span></label>
+              <label class="answer"><input type="checkbox" name="q175" value="G"><span class="letter">G)</span><span>инстинктивті сигналдық бағдар</span></label>
+            </div>
+            <div class="explanation">
+              Мінездің қалыптасуында генотиптік алғышарттар да, тәрбие, әлеуметтік орта
+              және өмір жағдайлары да бірге әсер етеді.
+            </div>
+          </div>
+
+          <div class="question" data-answer="C,F,H">
+            <div class="question-top">
+              <div class="q-number">12</div>
+              <div class="q-title">Мінездің генетикалық алғышарттарын дұрыс түсіндіретін тұжырымдар</div>
+            </div>
+            <div class="answers">
+              <label class="answer"><input type="checkbox" name="q176" value="A"><span class="letter">A)</span><span>генотип мінез тағдырын толық алдын ала анықтайды</span></label>
+              <label class="answer"><input type="checkbox" name="q176" value="B"><span class="letter">B)</span><span>орта мінез қалыптасуына мүлде әсер етпейді</span></label>
+              <label class="answer"><input type="checkbox" name="q176" value="C"><span class="letter">C)</span><span>генотип белгілі реакция мүмкіндіктерін ғана береді</span></label>
+              <label class="answer"><input type="checkbox" name="q176" value="D"><span class="letter">D)</span><span>тәрбие мінез ерекшеліктерін толық жояды</span></label>
+              <label class="answer"><input type="checkbox" name="q176" value="E"><span class="letter">E)</span><span>мінез тек биологиялық факторға тәуелді болады</span></label>
+              <label class="answer"><input type="checkbox" name="q176" value="F"><span class="letter">F)</span><span>нақты мінез белгісі алғышарт пен ортаның өзара әрекетінде қалыптасады</span></label>
+              <label class="answer"><input type="checkbox" name="q176" value="G"><span class="letter">G)</span><span>жасөспірімдік өзгерістер мінезге қатыспайды</span></label>
+              <label class="answer"><input type="checkbox" name="q176" value="H"><span class="letter">H)</span><span>қолайлы орта генотиптік тәуекелді жұмсартуы мүмкін</span></label>
+            </div>
+            <div class="explanation">
+              Генотип мінезді толық алдын ала анықтамайды. Ол белгілі реакция мүмкіндіктерін
+              береді, ал нақты мінез орта, тәрбие және өмір жағдайларымен бірге қалыптасады.
+            </div>
+          </div>
+
+          <div class="question" data-answer="B">
+            <div class="question-top">
+              <div class="q-number">13</div>
+              <div class="q-title">А.Н. Леонтьев бойынша индивидтік қасиеттердің тұлға қалыптасуындағы орны</div>
+            </div>
+            <div class="answers">
+              <label class="answer"><input type="checkbox" name="q177" value="A"><span class="letter">A)</span><span>тұлғаның толық дайын мазмұнын құрайды</span></label>
+              <label class="answer"><input type="checkbox" name="q177" value="B"><span class="letter">B)</span><span>тұлға қалыптасуының шарты және алғышарты болады</span></label>
+              <label class="answer"><input type="checkbox" name="q177" value="C"><span class="letter">C)</span><span>тұлғаның әлеуметтік мотивін толық алмастырады</span></label>
+              <label class="answer"><input type="checkbox" name="q177" value="D"><span class="letter">D)</span><span>қоғамдық құндылықты қажетсіз етеді</span></label>
+              <label class="answer"><input type="checkbox" name="q177" value="E"><span class="letter">E)</span><span>мінездің барлық көрінісін патологияға айналдырады</span></label>
+            </div>
+            <div class="explanation">
+              Индивидтік қасиеттер, соның ішінде мінез ерекшеліктері, тұлғаның дайын
+              мазмұны емес; олар тұлға қалыптасуының шарттары мен алғышарттары ретінде көрінеді.
+            </div>
+          </div>
+
+          <div class="question" data-answer="A,D">
+            <div class="question-top">
+              <div class="q-number">14</div>
+              <div class="q-title">Тұлғаның мінезге кері ықпалын сипаттайтын белгілер</div>
+            </div>
+            <div class="answers">
+              <label class="answer"><input type="checkbox" name="q178" value="A"><span class="letter">A)</span><span>адамның “қалай дұрыс” деген өлшеммен әрекет етуі</span></label>
+              <label class="answer"><input type="checkbox" name="q178" value="B"><span class="letter">B)</span><span>мінез импульстарының әрқашан толық үстем болуы</span></label>
+              <label class="answer"><input type="checkbox" name="q178" value="C"><span class="letter">C)</span><span>қоғамдық норманың әрекетке әсер етпеуі</span></label>
+              <label class="answer"><input type="checkbox" name="q178" value="D"><span class="letter">D)</span><span>мінез ерекшеліктерінің жоғары мотивтерге бағынуы</span></label>
+              <label class="answer"><input type="checkbox" name="q178" value="E"><span class="letter">E)</span><span>тұлғаның тек темперамент қарқынымен шектелуі</span></label>
+              <label class="answer"><input type="checkbox" name="q178" value="F"><span class="letter">F)</span><span>мінездің әлеуметтік жауапкершілікті толық жоюы</span></label>
+              <label class="answer"><input type="checkbox" name="q178" value="G"><span class="letter">G)</span><span>генотиптік алғышарттың тәрбиеге тәуелсіз болуы</span></label>
+            </div>
+            <div class="explanation">
+              Тұлға дамыған сайын адам тек табиғи мінез импульстарымен емес, әлеуметтік
+              нормалармен, жауапкершілікпен және жоғары мотивтермен әрекет етеді.
+            </div>
+          </div>
+
+          <div class="question" data-answer="E">
+            <div class="question-top">
+              <div class="q-number">15</div>
+              <div class="q-title">“Тұлға мінезді алып тастайды” деген тұжырымның мәні</div>
+            </div>
+            <div class="answers">
+              <label class="answer"><input type="checkbox" name="q179" value="A"><span class="letter">A)</span><span>мінез биологиялық тұрғыдан толық жоғалады</span></label>
+              <label class="answer"><input type="checkbox" name="q179" value="B"><span class="letter">B)</span><span>адамның индивидуалдық ерекшеліктері мүлде болмайды</span></label>
+              <label class="answer"><input type="checkbox" name="q179" value="C"><span class="letter">C)</span><span>темперамент қабілетке толық ауысады</span></label>
+              <label class="answer"><input type="checkbox" name="q179" value="D"><span class="letter">D)</span><span>акцентуация міндетті түрде психопатияға айналады</span></label>
+              <label class="answer"><input type="checkbox" name="q179" value="E"><span class="letter">E)</span><span>мінез импульстарының тұлғалық құндылықтармен реттелуі</span></label>
+            </div>
+            <div class="explanation">
+              Бұл тұжырым мінез жоғалады дегенді емес, тұлға дамыған сайын мінез
+              импульстары жоғары мотивтермен, құндылықтармен және нормалармен реттелетінін білдіреді.
+            </div>
+          </div>
+
+          <div class="question" data-answer="B,F,H">
+            <div class="question-top">
+              <div class="q-number">16</div>
+              <div class="q-title">Мінезді зерттеудің практикалық маңызы</div>
+            </div>
+            <div class="answers">
+              <label class="answer"><input type="checkbox" name="q180" value="A"><span class="letter">A)</span><span>қабілетті тек генотип арқылы анықтау</span></label>
+              <label class="answer"><input type="checkbox" name="q180" value="B"><span class="letter">B)</span><span>индивидуалдық тәрбиелік тәсілді таңдауға көмектесу</span></label>
+              <label class="answer"><input type="checkbox" name="q180" value="C"><span class="letter">C)</span><span>темпераментті әлеуметтік мотивпен алмастыру</span></label>
+              <label class="answer"><input type="checkbox" name="q180" value="D"><span class="letter">D)</span><span>психиканы физиологияға толық редукциялау</span></label>
+              <label class="answer"><input type="checkbox" name="q180" value="E"><span class="letter">E)</span><span>мінездің барлық айырмашылығын патология деп санау</span></label>
+              <label class="answer"><input type="checkbox" name="q180" value="F"><span class="letter">F)</span><span>әлсіз буынға артық жүктеме түсірмеуге мүмкіндік беру</span></label>
+              <label class="answer"><input type="checkbox" name="q180" value="G"><span class="letter">G)</span><span>әлеуметтік нормаларды қажетсіз деп түсіндіру</span></label>
+              <label class="answer"><input type="checkbox" name="q180" value="H"><span class="letter">H)</span><span>қарым-қатынастағы шиеленістердің алдын алуға көмектесу</span></label>
+            </div>
+            <div class="explanation">
+              Мінез типін және оның әлсіз буынын білу тәрбиеде, қарым-қатынаста,
+              өзін-өзі реттеуде және шиеленістердің алдын алуда маңызды.
+            </div>
+          </div>
+
+          <div class="btn-row">
+            <button class="check-btn" type="button" onclick="checkQuiz('lesson15')">Нәтижені көрсету</button>
+            <span class="hint">Жауаптарды таңдағаннан кейін нәтижені көріңіз.</span>
+          </div>
+
+          <div class="result-panel" id="result-lesson15"></div>
+        </section>
+      </article>
+
+      <div class="next-placeholder" id="lesson-16">
+        16-подраздел келесі кодта жалғасады: “Тұлға және оның қалыптасуы”.
+      </div>
+           <article class="lesson" id="lesson-16">
+        <div class="lesson-header">
+          <div class="lesson-title">
+            <h2>16-подраздел. Тұлға және оның қалыптасуы</h2>
+            <p>
+              Бұл подразделде тұлғаның психологиялық критерийлері, мотивтер иерархиясы,
+              саналы өзін-өзі басқару, тұлғаның қалыптасу кезеңдері, мотивтің мақсатқа
+              ауысуы, идентификация, әлеуметтік рөлдерді меңгеру және өзіндік сананың
+              негізгі функциялары қарастырылады.
+            </p>
+          </div>
+          <div class="lesson-chip">16-подраздел</div>
+        </div>
+
+        <div class="content-grid">
+          <section class="theory-card">
+            <h3>Негізгі теория</h3>
+            <p>
+              Тұлға адамның қоғамдық қатынастарға енуі және осы қатынастарды ішкі
+              психологиялық құрылымға айналдыруы арқылы қалыптасады. Тұлға дайын күйде
+              берілмейді; ол әлеуметтік тәжірибені, нормаларды, құндылықтарды, рөлдерді
+              және мотивтер жүйесін меңгеру барысында дамиды.
+            </p>
+            <p>
+              Қалыптасқан тұлғаның бірінші критерийі — мотивтер иерархиясының болуы.
+              Бұл адамның тікелей, бір сәттік побуждениелерін әлеуметтік мәні бар
+              мотивтер үшін жеңе алуынан көрінеді. Мұндай жағдайда мінез-құлық
+              опосредованный сипат алады.
+            </p>
+            <p>
+              Екінші критерий — адамның өз мінез-құлқын саналы түрде басқара алуы.
+              Бұл басқару саналы мотивтер, мақсаттар, принциптер және өзіндік сана
+              негізінде жүзеге асады. Сондықтан өзіндік сана тұлғаның ерекше инстанциясы
+              ретінде қарастырылады.
+            </p>
+            <p>
+              А.Н. Леонтьев тұлға “екі рет туады” деп сипаттайды. Бірінші тууы
+              мектепке дейінгі жаста басталады: балада мотивтердің алғашқы иерархиясы
+              қалыптасады, тікелей побуждениелер әлеуметтік талаптарға бағына бастайды.
+              “Горькая конфета” эффекті осы процесті көрсетеді.
+            </p>
+            <p>
+              Екінші тууы жасөспірімдік кезеңде басталады. Бұл кезде адам өз мотивтерін
+              саналы түрде түсінуге, оларды бағындыруға, қайта құруға, өзін-өзі басқаруға
+              және өзін тәрбиелеуге ұмтылады.
+            </p>
+            <p>
+              Тұлға қалыптасуы білімді жай меңгерумен шектелмейді. Нормалар мен
+              құндылықтар адамның шынайы мотивіне айналуы үшін олар өмірде переживание
+              және проживание арқылы эмоционалды түрде меңгерілуі керек.
+            </p>
+            <p>
+              Тұлға қалыптасуының маңызды механизмдерінің бірі — мотивтің мақсатқа
+              ауысуы. Бала бастапқыда белгілі әрекетті маңызды адаммен қарым-қатынас
+              мотиві үшін орындайды. Егер бұл әрекет ұзақ уақыт жағымды эмоциялармен
+              байланысса, әрекеттің өзі дербес мотивке айналуы мүмкін.
+            </p>
+            <p>
+              Идентификация — тұлға қалыптасуының тағы бір механизмі. Бала немесе жас
+              адам маңызды адамға, ата-анаға, мұғалімге, құрдасына, әдеби кейіпкерге
+              немесе идеалға еліктеп, оның мінез-құлық тәсілдерін, қатынасын және
+              құндылықтарын меңгереді.
+            </p>
+            <p>
+              Әлеуметтік рөлдерді меңгеру де тұлға дамуында маңызды. Әлеуметтік рөл
+              адамнан белгілі құқықтар мен міндеттерге сәйкес әрекет етуді талап етеді.
+              Рөлді орындау барысында жаңа мотивтер пайда болып, мотивтер иерархиясы
+              өзгереді және тұлғаның құндылықтық жүйесі қайта құрылады.
+            </p>
+            <p>
+              Өзіндік сана — адамның өзі туралы бейнесі және өзіне қатынасы. Оның негізгі
+              функциялары: өзін тану, өзін жетілдіру және өмірінің мағынасын іздеу.
+              Өзіндік сана тұлғаның әрі қарай өсуін, өзін-өзі басқаруын және өзін-өзі
+              тәрбиелеуін қамтамасыз етеді.
+            </p>
+
+            <ul class="clean-list">
+              <li>
+                <b>Тұлға</b> — қоғамдық қатынастарда қалыптасатын, мотивтер жүйесі,
+                құндылықтар және өзіндік сана арқылы сипатталатын психологиялық құрылым.
+              </li>
+              <li>
+                <b>Мотивтер иерархиясы</b> — тікелей побуждениелердің жоғары,
+                әлеуметтік мәнді мотивтерге бағынуы.
+              </li>
+              <li>
+                <b>Мотивтің мақсатқа ауысуы</b> — жағымды эмоциялармен ұзақ байланысқан
+                мақсаттың дербес мотивке айналуы.
+              </li>
+              <li>
+                <b>Өзіндік сана</b> — адамның өзі туралы бейнесі, өзіне қатынасы және
+                өзін өзгертуге бағытталған ішкі жұмысы.
+              </li>
+            </ul>
+          </section>
+
+          <aside class="term-card">
+            <h3>Негізгі терминдер</h3>
+            <div class="term-list">
+              <div class="term-item">
+                <b>Тұлға</b>
+                <span>Қоғамдық қатынастарды меңгеру, мотивтер жүйесі және өзіндік сана арқылы қалыптасатын адам құрылымы.</span>
+              </div>
+              <div class="term-item">
+                <b>Опосредованный мінез-құлық</b>
+                <span>Тікелей импульспен емес, әлеуметтік мотив, норма немесе принцип арқылы реттелетін мінез-құлық.</span>
+              </div>
+              <div class="term-item">
+                <b>Мотивтер иерархиясы</b>
+                <span>Әртүрлі мотивтердің бір-біріне бағынуы және жоғары мотивтің төменгі побуждениені реттеуі.</span>
+              </div>
+              <div class="term-item">
+                <b>Сдвиг мотива на цель</b>
+                <span>Бастапқыда басқа мотив үшін орындалған мақсаттың кейін дербес мотивке айналуы.</span>
+              </div>
+              <div class="term-item">
+                <b>Идентификация</b>
+                <span>Маңызды адаммен немесе идеалмен өзін теңестіріп, оның мінез-құлық тәсілдері мен құндылықтарын меңгеру.</span>
+              </div>
+              <div class="term-item">
+                <b>Әлеуметтік рөл</b>
+                <span>Белгілі әлеуметтік позицияға сәйкес күтілетін әрекеттер, құқықтар және міндеттер жүйесі.</span>
+              </div>
+              <div class="term-item">
+                <b>Өзіндік сана</b>
+                <span>Адамның өзі туралы бейнесі, өзіне қатынасы және өзін өзгертуге бағытталған рефлексивті жұмысы.</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+
+        <section class="note-card">
+          <h3>Маңызды ұғымдар</h3>
+          <div class="subtopic-strip">
+            <span>тұлға</span>
+            <span>мотивтер иерархиясы</span>
+            <span>опосредованный мінез-құлық</span>
+            <span>саналы өзін-өзі басқару</span>
+            <span>тұлғаның бірінші тууы</span>
+            <span>тұлғаның екінші тууы</span>
+            <span>горькая конфета эффекті</span>
+            <span>мотивтің мақсатқа ауысуы</span>
+            <span>идентификация</span>
+            <span>әлеуметтік рөл</span>
+            <span>өзіндік сана</span>
+            <span>өмір мағынасын іздеу</span>
+          </div>
+        </section>
+
+        <section class="quiz-block" id="quiz-16" data-quiz="lesson16">
+          <div class="quiz-head">
+            <div>
+              <h3>Тест тапсырмалары</h3>
+              <p>Дұрыс жауапты немесе дұрыс жауаптарды таңдаңыз.</p>
+            </div>
+            <div class="score-pill">16-подраздел</div>
+          </div>
+
+          <div class="question" data-answer="C">
+            <div class="question-top">
+              <div class="q-number">1</div>
+              <div class="q-title">Тұлғаның қалыптасуын сипаттайтын негізгі белгі</div>
+            </div>
+            <div class="answers">
+              <label class="answer"><input type="checkbox" name="q181" value="A"><span class="letter">A)</span><span>индивидтік қасиеттердің биологиялық түрде дайын берілуі</span></label>
+              <label class="answer"><input type="checkbox" name="q181" value="B"><span class="letter">B)</span><span>темперамент динамикасының жүйке жүйесіне тәуелді болуы</span></label>
+              <label class="answer"><input type="checkbox" name="q181" value="C"><span class="letter">C)</span><span>қоғамдық қатынастардың ішкі психологиялық құрылымға айналуы</span></label>
+              <label class="answer"><input type="checkbox" name="q181" value="D"><span class="letter">D)</span><span>қабілеттің нышан арқылы автоматты қалыптасуы</span></label>
+              <label class="answer"><input type="checkbox" name="q181" value="E"><span class="letter">E)</span><span>мінездің акцентуация типімен толық шектелуі</span></label>
+            </div>
+            <div class="explanation">
+              Тұлға қоғамдық қатынастарға ену және оларды интериоризациялау арқылы
+              қалыптасады. Бұл биологиялық дайын қасиет емес, әлеуметтік-психологиялық құрылым.
+            </div>
+          </div>
+
+          <div class="question" data-answer="A,D">
+            <div class="question-top">
+              <div class="q-number">2</div>
+              <div class="q-title">Қалыптасқан тұлғаның негізгі критерийлері</div>
+            </div>
+            <div class="answers">
+              <label class="answer"><input type="checkbox" name="q182" value="A"><span class="letter">A)</span><span>мотивтер иерархиясының болуы</span></label>
+              <label class="answer"><input type="checkbox" name="q182" value="B"><span class="letter">B)</span><span>темпераменттің моторлық сферада көрінуі</span></label>
+              <label class="answer"><input type="checkbox" name="q182" value="C"><span class="letter">C)</span><span>қабілеттің білімнен ажырауы</span></label>
+              <label class="answer"><input type="checkbox" name="q182" value="D"><span class="letter">D)</span><span>мінез-құлықты саналы басқару қабілеті</span></label>
+              <label class="answer"><input type="checkbox" name="q182" value="E"><span class="letter">E)</span><span>жүйке процестерінің тепе-теңдігі</span></label>
+              <label class="answer"><input type="checkbox" name="q182" value="F"><span class="letter">F)</span><span>акцентуацияның жасөспірімде күшеюі</span></label>
+              <label class="answer"><input type="checkbox" name="q182" value="G"><span class="letter">G)</span><span>нышанның табиғи алғышарт болуы</span></label>
+            </div>
+            <div class="explanation">
+              Тұлғаның екі негізгі критерийі бар: мотивтер иерархиясының қалыптасуы
+              және мінез-құлықты саналы мотивтер мен принциптер арқылы басқару қабілеті.
+            </div>
+          </div>
+
+          <div class="question" data-answer="B">
+            <div class="question-top">
+              <div class="q-number">3</div>
+              <div class="q-title">Мотивтер иерархиясы тұлғада нені білдіреді?</div>
+            </div>
+            <div class="answers">
+              <label class="answer"><input type="checkbox" name="q183" value="A"><span class="letter">A)</span><span>барлық побуждениелердің бірдей күшпен әсер етуін</span></label>
+              <label class="answer"><input type="checkbox" name="q183" value="B"><span class="letter">B)</span><span>тікелей импульстің жоғары әлеуметтік мотивке бағынуын</span></label>
+              <label class="answer"><input type="checkbox" name="q183" value="C"><span class="letter">C)</span><span>қабілеттің білім мен дағдыға толық айналуын</span></label>
+              <label class="answer"><input type="checkbox" name="q183" value="D"><span class="letter">D)</span><span>мінездің барлық жағдайда тоталды көрінуін</span></label>
+              <label class="answer"><input type="checkbox" name="q183" value="E"><span class="letter">E)</span><span>темпераменттің эмоционалдылықпен шектелуін</span></label>
+            </div>
+            <div class="explanation">
+              Мотивтер иерархиясы адамның тікелей побуждениелерін әлеуметтік мәнді,
+              жоғары мотивтер үшін жеңе алуынан көрінеді.
+            </div>
+          </div>
+
+          <div class="question" data-answer="C,E,H">
+            <div class="question-top">
+              <div class="q-number">4</div>
+              <div class="q-title">Опосредованный мінез-құлыққа тән белгілер</div>
+            </div>
+            <div class="answers">
+              <label class="answer"><input type="checkbox" name="q184" value="A"><span class="letter">A)</span><span>әрекеттің тек биологиялық импульске бағынуы</span></label>
+              <label class="answer"><input type="checkbox" name="q184" value="B"><span class="letter">B)</span><span>мінездің жүйке жүйесі күшімен толық анықталуы</span></label>
+              <label class="answer"><input type="checkbox" name="q184" value="C"><span class="letter">C)</span><span>тікелей побуждениенің әлеуметтік талаппен реттелуі</span></label>
+              <label class="answer"><input type="checkbox" name="q184" value="D"><span class="letter">D)</span><span>қабілеттің нышаннан дайын күйде шығуы</span></label>
+              <label class="answer"><input type="checkbox" name="q184" value="E"><span class="letter">E)</span><span>әрекеттің норма немесе принцип арқылы бағытталуы</span></label>
+              <label class="answer"><input type="checkbox" name="q184" value="F"><span class="letter">F)</span><span>акцентуацияның барлық жағдайда патологияға айналуы</span></label>
+              <label class="answer"><input type="checkbox" name="q184" value="G"><span class="letter">G)</span><span>темпераменттің тұлғалық құндылыққа тең болуы</span></label>
+              <label class="answer"><input type="checkbox" name="q184" value="H"><span class="letter">H)</span><span>жоғары мотивтің төменгі импульсті тежеуі</span></label>
+            </div>
+            <div class="explanation">
+              Опосредованный мінез-құлықта адам тікелей импульске бірден ермейді;
+              әрекет әлеуметтік талап, норма, принцип немесе жоғары мотив арқылы реттеледі.
+            </div>
+          </div>
+
+          <div class="question" data-answer="D">
+            <div class="question-top">
+              <div class="q-number">5</div>
+              <div class="q-title">Тұлғаның “бірінші тууы” қай процеспен байланысты?</div>
+            </div>
+            <div class="answers">
+              <label class="answer"><input type="checkbox" name="q185" value="A"><span class="letter">A)</span><span>өз мотивтерін саналы қайта құрудың басталуымен</span></label>
+              <label class="answer"><input type="checkbox" name="q185" value="B"><span class="letter">B)</span><span>өмір мағынасын рефлексивті іздеудің күшеюімен</span></label>
+              <label class="answer"><input type="checkbox" name="q185" value="C"><span class="letter">C)</span><span>тұлғаның әлеуметтік рөлден толық шығуымен</span></label>
+              <label class="answer"><input type="checkbox" name="q185" value="D"><span class="letter">D)</span><span>мотивтердің алғашқы иерархиясының қалыптасуымен</span></label>
+              <label class="answer"><input type="checkbox" name="q185" value="E"><span class="letter">E)</span><span>мінез акцентуациясының жасөспірімде айқындалуымен</span></label>
+            </div>
+            <div class="explanation">
+              Тұлғаның бірінші тууы мектепке дейінгі жаста мотивтердің алғашқы
+              иерархиясы қалыптасып, тікелей побуждениелер әлеуметтік нормаларға бағына бастағанда көрінеді.
+            </div>
+          </div>
+
+          <div class="question" data-answer="A,F">
+            <div class="question-top">
+              <div class="q-number">6</div>
+              <div class="q-title">“Горькая конфета” эффектісі көрсететін психологиялық мазмұн</div>
+            </div>
+            <div class="answers">
+              <label class="answer"><input type="checkbox" name="q186" value="A"><span class="letter">A)</span><span>тікелей побуждение мен әлеуметтік мотивтің қақтығысуы</span></label>
+              <label class="answer"><input type="checkbox" name="q186" value="B"><span class="letter">B)</span><span>темпераменттің эмоциялық импульсивтілікпен өлшенуі</span></label>
+              <label class="answer"><input type="checkbox" name="q186" value="C"><span class="letter">C)</span><span>қабілеттің сензитивті кезеңде дамуы</span></label>
+              <label class="answer"><input type="checkbox" name="q186" value="D"><span class="letter">D)</span><span>акцентуацияның әлсіз буын арқылы көрінуі</span></label>
+              <label class="answer"><input type="checkbox" name="q186" value="E"><span class="letter">E)</span><span>мінездің тоталды түрде барлық жағдайда байқалуы</span></label>
+              <label class="answer"><input type="checkbox" name="q186" value="F"><span class="letter">F)</span><span>әлеуметтік норманы меңгерудің басталғанын білдіруі</span></label>
+              <label class="answer"><input type="checkbox" name="q186" value="G"><span class="letter">G)</span><span>жүйке жүйесі қозғалғыштығының темпераментке әсері</span></label>
+            </div>
+            <div class="explanation">
+              Бұл эффект балада қызықты затты алу мотиві мен ересектің талабын орындау
+              мотиві қақтығысқанын және әлеуметтік норманы меңгеру басталғанын көрсетеді.
+            </div>
+          </div>
+
+          <div class="question" data-answer="B">
+            <div class="question-top">
+              <div class="q-number">7</div>
+              <div class="q-title">Тұлғаның “екінші тууы” немен сипатталады?</div>
+            </div>
+            <div class="answers">
+              <label class="answer"><input type="checkbox" name="q187" value="A"><span class="letter">A)</span><span>мінездің биологиялық алғышарттарының толық басым болуымен</span></label>
+              <label class="answer"><input type="checkbox" name="q187" value="B"><span class="letter">B)</span><span>өз мотивтерін түсіну және саналы қайта бағындыру қабілетімен</span></label>
+              <label class="answer"><input type="checkbox" name="q187" value="C"><span class="letter">C)</span><span>қабілеттің нышаннан автоматты түрде шығуымен</span></label>
+              <label class="answer"><input type="checkbox" name="q187" value="D"><span class="letter">D)</span><span>темпераменттің моторлық қарқынға айналуымен</span></label>
+              <label class="answer"><input type="checkbox" name="q187" value="E"><span class="letter">E)</span><span>әлеуметтік рөлдердің адамнан толық бөлінуімен</span></label>
+            </div>
+            <div class="explanation">
+              Тұлғаның екінші тууы жасөспірімдік кезеңде байқалады: адам өз мотивтерін
+              түсініп, оларды саналы түрде бағындыруға, өзін басқаруға және өзін тәрбиелеуге ұмтылады.
+            </div>
+          </div>
+
+          <div class="question" data-answer="C,E,G">
+            <div class="question-top">
+              <div class="q-number">8</div>
+              <div class="q-title">Тұлға қалыптасуының стихийные механизмдеріне жататындар</div>
+            </div>
+            <div class="answers">
+              <label class="answer"><input type="checkbox" name="q188" value="A"><span class="letter">A)</span><span>жүйке процестерінің күші</span></label>
+              <label class="answer"><input type="checkbox" name="q188" value="B"><span class="letter">B)</span><span>қабілеттің нышанға тәуелділігі</span></label>
+              <label class="answer"><input type="checkbox" name="q188" value="C"><span class="letter">C)</span><span>мотивтің мақсатқа ауысуы</span></label>
+              <label class="answer"><input type="checkbox" name="q188" value="D"><span class="letter">D)</span><span>темпераменттің эмоционалдылығы</span></label>
+              <label class="answer"><input type="checkbox" name="q188" value="E"><span class="letter">E)</span><span>идентификация</span></label>
+              <label class="answer"><input type="checkbox" name="q188" value="F"><span class="letter">F)</span><span>мінездің тоталдылығы</span></label>
+              <label class="answer"><input type="checkbox" name="q188" value="G"><span class="letter">G)</span><span>әлеуметтік рөлдерді меңгеру</span></label>
+              <label class="answer"><input type="checkbox" name="q188" value="H"><span class="letter">H)</span><span>акцентуацияның әлсіз буыны</span></label>
+            </div>
+            <div class="explanation">
+              Тұлға қалыптасуының стихийные механизмдеріне мотивтің мақсатқа ауысуы,
+              идентификация және әлеуметтік рөлдерді меңгеру жатады.
+            </div>
+          </div>
+
+          <div class="question" data-answer="E">
+            <div class="question-top">
+              <div class="q-number">9</div>
+              <div class="q-title">Мотивтің мақсатқа ауысу механизмінің мәні</div>
+            </div>
+            <div class="answers">
+              <label class="answer"><input type="checkbox" name="q189" value="A"><span class="letter">A)</span><span>мақсаттың қоғамдық нормадан толық ажырауы</span></label>
+              <label class="answer"><input type="checkbox" name="q189" value="B"><span class="letter">B)</span><span>мінез импульсының тұлғалық құндылықты жоюы</span></label>
+              <label class="answer"><input type="checkbox" name="q189" value="C"><span class="letter">C)</span><span>қабілеттің дайын білімге бірден айналуы</span></label>
+              <label class="answer"><input type="checkbox" name="q189" value="D"><span class="letter">D)</span><span>темпераменттің мотив иерархиясын алмастыруы</span></label>
+              <label class="answer"><input type="checkbox" name="q189" value="E"><span class="letter">E)</span><span>жағымды эмоциялармен бекіген мақсаттың дербес мотивке айналуы</span></label>
+            </div>
+            <div class="explanation">
+              Егер мақсат ұзақ уақыт маңызды мотивпен және жағымды эмоциялармен
+              байланысса, ол кейін өздігінен әрекетке итермелейтін дербес мотивке айналады.
+            </div>
+          </div>
+
+          <div class="question" data-answer="B,D">
+            <div class="question-top">
+              <div class="q-number">10</div>
+              <div class="q-title">Идентификация механизмінің ерекшеліктері</div>
+            </div>
+            <div class="answers">
+              <label class="answer"><input type="checkbox" name="q190" value="A"><span class="letter">A)</span><span>тек жүйке жүйесінің физиологиялық қасиеті болуы</span></label>
+              <label class="answer"><input type="checkbox" name="q190" value="B"><span class="letter">B)</span><span>маңызды адаммен немесе идеалмен өзін теңестіру</span></label>
+              <label class="answer"><input type="checkbox" name="q190" value="C"><span class="letter">C)</span><span>қабілеттің біліммен толық алмастырылуы</span></label>
+              <label class="answer"><input type="checkbox" name="q190" value="D"><span class="letter">D)</span><span>мінез-құлық тәсілдері мен құндылықтарды үлгі арқылы меңгеру</span></label>
+              <label class="answer"><input type="checkbox" name="q190" value="E"><span class="letter">E)</span><span>акцентуацияның әлеуметтік дезадаптацияға міндетті өтуі</span></label>
+              <label class="answer"><input type="checkbox" name="q190" value="F"><span class="letter">F)</span><span>темпераментті моторлық сферада ғана сипаттау</span></label>
+              <label class="answer"><input type="checkbox" name="q190" value="G"><span class="letter">G)</span><span>мінезді биологиялық алғышартқа толық теңестіру</span></label>
+            </div>
+            <div class="explanation">
+              Идентификацияда адам маңызды тұлғамен немесе идеалмен өзін теңестіріп,
+              оның мінез-құлық тәсілдерін, қатынасын және құндылықтарын меңгереді.
+            </div>
+          </div>
+
+          <div class="question" data-answer="A,C,F">
+            <div class="question-top">
+              <div class="q-number">11</div>
+              <div class="q-title">Әлеуметтік рөлді меңгерудің тұлғаға әсері</div>
+            </div>
+            <div class="answers">
+              <label class="answer"><input type="checkbox" name="q191" value="A"><span class="letter">A)</span><span>жаңа мотивтердің пайда болуына ықпал етуі</span></label>
+              <label class="answer"><input type="checkbox" name="q191" value="B"><span class="letter">B)</span><span>темперамент қасиеттерін толық жоюы</span></label>
+              <label class="answer"><input type="checkbox" name="q191" value="C"><span class="letter">C)</span><span>мотивтер иерархиясын қайта құруы</span></label>
+              <label class="answer"><input type="checkbox" name="q191" value="D"><span class="letter">D)</span><span>қабілеттің нышаннан тәуелсіз дамуын қамтамасыз етуі</span></label>
+              <label class="answer"><input type="checkbox" name="q191" value="E"><span class="letter">E)</span><span>мінездің барлық ерекшелігін патологияға айналдыруы</span></label>
+              <label class="answer"><input type="checkbox" name="q191" value="F"><span class="letter">F)</span><span>құндылықтар мен қатынастар жүйесін өзгертуі</span></label>
+              <label class="answer"><input type="checkbox" name="q191" value="G"><span class="letter">G)</span><span>өзіндік сананың қажетсіз болуына әкелуі</span></label>
+              <label class="answer"><input type="checkbox" name="q191" value="H"><span class="letter">H)</span><span>жүйке жүйесінің күшін әлеуметтік мотивке айналдыруы</span></label>
+            </div>
+            <div class="explanation">
+              Әлеуметтік рөлдерді меңгеру жаңа мотивтердің пайда болуына, мотивтер
+              иерархиясының өзгеруіне және құндылықтар жүйесінің қайта құрылуына ықпал етеді.
+            </div>
+          </div>
+
+          <div class="question" data-answer="D">
+            <div class="question-top">
+              <div class="q-number">12</div>
+              <div class="q-title">Әлеуметтік позиция ұғымына сәйкес сипат</div>
+            </div>
+            <div class="answers">
+              <label class="answer"><input type="checkbox" name="q192" value="A"><span class="letter">A)</span><span>қабілеттің табиғи дамуына алғышарт болатын нышан</span></label>
+              <label class="answer"><input type="checkbox" name="q192" value="B"><span class="letter">B)</span><span>психикалық әрекеттің динамикалық қарқыны</span></label>
+              <label class="answer"><input type="checkbox" name="q192" value="C"><span class="letter">C)</span><span>мінездің белгілі жағдайда айқын көрінетін шеткі варианты</span></label>
+              <label class="answer"><input type="checkbox" name="q192" value="D"><span class="letter">D)</span><span>адамның басқа адамдарға қатысты құқықтары мен міндеттері бар орны</span></label>
+              <label class="answer"><input type="checkbox" name="q192" value="E"><span class="letter">E)</span><span>жүйке процестерінің күш, тепе-теңдік және қозғалғыштық қасиеті</span></label>
+            </div>
+            <div class="explanation">
+              Әлеуметтік позиция — адамның басқа адамдарға қатысты функционалдық орны;
+              ол құқықтар мен міндеттер жүйесі арқылы сипатталады.
+            </div>
+          </div>
+
+          <div class="question" data-answer="B,E,H">
+            <div class="question-top">
+              <div class="q-number">13</div>
+              <div class="q-title">Өзіндік сананың негізгі функциялары</div>
+            </div>
+            <div class="answers">
+              <label class="answer"><input type="checkbox" name="q193" value="A"><span class="letter">A)</span><span>темпераменттің моторлық қарқынын күшейту</span></label>
+              <label class="answer"><input type="checkbox" name="q193" value="B"><span class="letter">B)</span><span>өзін тану</span></label>
+              <label class="answer"><input type="checkbox" name="q193" value="C"><span class="letter">C)</span><span>қабілетті нышанмен толық теңестіру</span></label>
+              <label class="answer"><input type="checkbox" name="q193" value="D"><span class="letter">D)</span><span>акцентуацияны патологияға айналдыру</span></label>
+              <label class="answer"><input type="checkbox" name="q193" value="E"><span class="letter">E)</span><span>өзін жетілдіру</span></label>
+              <label class="answer"><input type="checkbox" name="q193" value="F"><span class="letter">F)</span><span>мінездің тоталды көрінуін сақтау</span></label>
+              <label class="answer"><input type="checkbox" name="q193" value="G"><span class="letter">G)</span><span>жүйке жүйесінің тепе-теңдігін өлшеу</span></label>
+              <label class="answer"><input type="checkbox" name="q193" value="H"><span class="letter">H)</span><span>өмір мағынасын іздеу</span></label>
+            </div>
+            <div class="explanation">
+              Өзіндік сананың негізгі функциялары — өзін тану, өзін жетілдіру және
+              өз іс-әрекетінің немесе өмірінің мағынасын іздеу.
+            </div>
+          </div>
+
+          <div class="question" data-answer="A,D">
+            <div class="question-top">
+              <div class="q-number">14</div>
+              <div class="q-title">Өзін танудың күрделі болу себептері</div>
+            </div>
+            <div class="answers">
+              <label class="answer"><input type="checkbox" name="q194" value="A"><span class="letter">A)</span><span>адамның өзін тану құралдары жаспен бірге дамуы</span></label>
+              <label class="answer"><input type="checkbox" name="q194" value="B"><span class="letter">B)</span><span>өзін танудың тек физиологиялық өлшеммен шешілуі</span></label>
+              <label class="answer"><input type="checkbox" name="q194" value="C"><span class="letter">C)</span><span>мінездің барлық жағдайда өзгеріссіз қалуы</span></label>
+              <label class="answer"><input type="checkbox" name="q194" value="D"><span class="letter">D)</span><span>өзі туралы білімнің субъектіні өзгертіп отыруы</span></label>
+              <label class="answer"><input type="checkbox" name="q194" value="E"><span class="letter">E)</span><span>қабілеттің дайын біліммен толық тең болуы</span></label>
+              <label class="answer"><input type="checkbox" name="q194" value="F"><span class="letter">F)</span><span>темпераменттің тұлғалық мағынаны алмастыруы</span></label>
+              <label class="answer"><input type="checkbox" name="q194" value="G"><span class="letter">G)</span><span>әлеуметтік рөлдердің тұлғаға қатыспауы</span></label>
+            </div>
+            <div class="explanation">
+              Өзін тану қиын, себебі адам өзін тануға қажет құралдарды біртіндеп
+              дамытады және өзі туралы әр жаңа білім адамның өзін де өзгертеді.
+            </div>
+          </div>
+
+          <div class="question" data-answer="C">
+            <div class="question-top">
+              <div class="q-number">15</div>
+              <div class="q-title">Жасөспірімдік кезеңдегі “рухани Менді” түсіну нені білдіреді?</div>
+            </div>
+            <div class="answers">
+              <label class="answer"><input type="checkbox" name="q195" value="A"><span class="letter">A)</span><span>өзін тек физикалық денеден ажыратуды</span></label>
+              <label class="answer"><input type="checkbox" name="q195" value="B"><span class="letter">B)</span><span>темпераменттің моторлық қарқындарын байқауды</span></label>
+              <label class="answer"><input type="checkbox" name="q195" value="C"><span class="letter">C)</span><span>өз қабілеттерін, мінезін және нравственные қасиеттерін бағалауды</span></label>
+              <label class="answer"><input type="checkbox" name="q195" value="D"><span class="letter">D)</span><span>нышанның қабілетке айналуын физиологиялық өлшеуді</span></label>
+              <label class="answer"><input type="checkbox" name="q195" value="E"><span class="letter">E)</span><span>акцентуацияның әлсіз буынын автоматты анықтауды</span></label>
+            </div>
+            <div class="explanation">
+              Жасөспірімдік кезеңде адам өзінің психикалық қабілеттерін, мінезін,
+              нравственные қасиеттерін және қандай адам болу керек екенін ойлай бастайды.
+            </div>
+          </div>
+
+          <div class="question" data-answer="B,F,H">
+            <div class="question-top">
+              <div class="q-number">16</div>
+              <div class="q-title">Тұлға дамуының толық психологиялық сипатына кіретін процестер</div>
+            </div>
+            <div class="answers">
+              <label class="answer"><input type="checkbox" name="q196" value="A"><span class="letter">A)</span><span>темпераменттің жүйке жүйесімен толық теңесуі</span></label>
+              <label class="answer"><input type="checkbox" name="q196" value="B"><span class="letter">B)</span><span>қоғамдық нормалардың ішкі мотивтерге айналуы</span></label>
+              <label class="answer"><input type="checkbox" name="q196" value="C"><span class="letter">C)</span><span>қабілеттің дайын білім ретінде берілуі</span></label>
+              <label class="answer"><input type="checkbox" name="q196" value="D"><span class="letter">D)</span><span>мінездің әрқашан патологиялық тоталдылыққа өтуі</span></label>
+              <label class="answer"><input type="checkbox" name="q196" value="E"><span class="letter">E)</span><span>акцентуацияның әлеуметтік рөлге толық тең болуы</span></label>
+              <label class="answer"><input type="checkbox" name="q196" value="F"><span class="letter">F)</span><span>мотивтер жүйесінің иерархиялық құрылуы</span></label>
+              <label class="answer"><input type="checkbox" name="q196" value="G"><span class="letter">G)</span><span>нышанның даму жағдайынан тәуелсіз болуы</span></label>
+              <label class="answer"><input type="checkbox" name="q196" value="H"><span class="letter">H)</span><span>өзіндік сана арқылы өзін-өзі басқарудың дамуы</span></label>
+            </div>
+            <div class="explanation">
+              Тұлға дамуы қоғамдық нормалардың ішкі мотивке айналуын, мотивтер
+              иерархиясының құрылуын және өзіндік сана арқылы өзін-өзі басқарудың дамуын қамтиды.
+            </div>
+          </div>
+
+          <div class="btn-row">
+            <button class="check-btn" type="button" onclick="checkQuiz('lesson16')">Нәтижені көрсету</button>
+            <span class="hint">Жауаптарды таңдағаннан кейін нәтижені көріңіз.</span>
+          </div>
+
+          <div class="result-panel" id="result-lesson16"></div>
+        </section>
+      </article>
+    </section>
+
+    <footer style="text-align:center; color:#6b6378; padding:30px 0 0; font-weight:700;">
+      © @elnazm_ln
+    </footer>
+  </main>
+
+  <script>
+    function normalizeAnswer(answer) {
+      return answer.split(",").map(x => x.trim()).filter(Boolean).sort().join(",");
+    }
+
+    function checkQuiz(quizId) {
+      const quiz = document.querySelector('[data-quiz="' + quizId + '"]');
+      if (!quiz) return;
+
+      const questions = quiz.querySelectorAll(".question");
+      let correctCount = 0;
+
+      questions.forEach((question) => {
+        const right = normalizeAnswer(question.dataset.answer || "");
+        const inputs = question.querySelectorAll("input");
+        const selected = [];
+
+        inputs.forEach((input) => {
+          const label = input.closest(".answer");
+          label.classList.remove("correct", "wrong");
+
+          if (input.checked) {
+            selected.push(input.value);
+          }
+        });
+
+        const selectedNormalized = selected.sort().join(",");
+
+        inputs.forEach((input) => {
+          const label = input.closest(".answer");
+          const correctValues = right.split(",");
+
+          if (correctValues.includes(input.value)) {
+            label.classList.add("correct");
+          }
+
+          if (input.checked && !correctValues.includes(input.value)) {
+            label.classList.add("wrong");
+          }
+        });
+
+        const explanation = question.querySelector(".explanation");
+        if (explanation) explanation.classList.add("show");
+
+        if (selectedNormalized === right) {
+          correctCount++;
+        }
+      });
+
+      const result = document.getElementById("result-" + quizId);
+      if (result) {
+        result.classList.add("show");
+        result.innerHTML =
+          "<b>Нәтиже:</b> " +
+          correctCount +
+          " / " +
+          questions.length +
+          " дұрыс жауап. Әр сұрақтың дұрыс жауабы жасыл түспен көрсетілді.";
+      }
+    }
+  </script>
+</body>
+</html>
